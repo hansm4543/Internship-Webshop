@@ -1,38 +1,29 @@
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
+import CategoriePage from "./Pages/CategoriePage";
+import Empty from "./Pages/Empty";
+import Cart from "./Pages/Cart";
+import SingleItem from "./Pages/SingleItem";
 
-import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from,} from '@apollo/client';
-
-import {onError} from '@apollo/client/link/error';
-import GetCategories from './Components/GetCategories';
-
-const errorLink = onError(({ graphqlErrors, networkError}) =>{
-  if(graphqlErrors){
-    graphqlErrors.map(({message, location, path}) => {
-      alert(`Graphql error ${message}`);
-    });
-  }
-});
-
-const link = from([
-  errorLink,
-  new HttpLink({uri: "http://localhost:4000" }),
-]);
-
-const client = new ApolloClient({
-  cache: new InMemoryCache(),
-  link: link,
-});
 
 
 function App() {
   return (
+    <BrowserRouter>
+      
 
-    <ApolloProvider client={client}>
-    {" "}
-    <GetCategories/>
-    </ApolloProvider>
+      <Routes>
+        <Route exact path="/" element={<CategoriePage/>}/>
+        <Route exact path="/cart" element={<Cart/>}/>
+        <Route exact path='/item/:itemId' element={<SingleItem/>}/>
+        
+        <Route path="/*" element={<Empty/>}/>
+      </Routes>
 
+        
+
+
+    </BrowserRouter>
   );
 }
 

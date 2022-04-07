@@ -1,23 +1,28 @@
 import React, {useEffect, useState} from "react";
 import {useQuery, gql} from '@apollo/client';
 import {LOAD_CATEGORIES} from '../GraphQL/Queries';
+import { Link } from "react-router-dom";
 
 function GetCategories(){
 
     const {error, loading, data} = useQuery(LOAD_CATEGORIES);
-    const [users, setUsers]=useState([]);
+    const [categories, setCategories]=useState([]);
 
     useEffect(()=>{
         console.log(data);
         if(data){
-            setUsers(data.categories);
+            setCategories(data.categories);
         }
         
     },[data]);
     return(
         <div>
-            {users.map((val)=> {
-                return <h1>{val.name}</h1>;
+            {categories.map((val)=> {
+                return <div>
+                    <Link to={`${val.name}`}>
+                        <p>{val.name}</p>
+                    </Link>
+                   </div>
             })}
         </div>
     );
