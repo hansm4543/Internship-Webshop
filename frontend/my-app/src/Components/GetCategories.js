@@ -21,9 +21,9 @@ function GetCategories(){
         <div>
             {categories.map((val)=> {
                 return <div>
-                    <Link to={`${val.name}`}>
-                        <p>{val.name}</p>
-                    </Link>
+                        <Link to={`${val.name}`}>
+                            <p>{val.name}</p>
+                        </Link>
                    </div>
             })}
         </div>

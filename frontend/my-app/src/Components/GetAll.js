@@ -4,6 +4,7 @@ import {LOAD_ALL} from '../GraphQL/Queries';
 import {LOAD_TECH} from '../GraphQL/Queries';
 import {LOAD_CLOTHES} from '../GraphQL/Queries';
 import { Link } from "react-router-dom";
+import ItemList from '../Components/ItemList';
 
 function GetAll(props){
     const {error, loading, data} = useQuery(LOAD_ALL);
@@ -16,7 +17,7 @@ function GetAll(props){
         
         if(data){
             console.log(data);
-            setIsLoadedItems(data.Category);
+            setIsLoadedItems(data.category.products);
             setIsLoading(false);
         }
 
@@ -33,7 +34,8 @@ function GetAll(props){
             return(
             
                 <div >
-                    <h1 >All</h1>
+                    <h1 >Loaded</h1>
+                    <ItemList items={loadedItems} />
                     
                 </div>
         

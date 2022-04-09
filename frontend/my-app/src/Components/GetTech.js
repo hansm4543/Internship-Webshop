@@ -4,6 +4,7 @@ import {LOAD_ALL} from '../GraphQL/Queries';
 import {LOAD_TECH} from '../GraphQL/Queries';
 import {LOAD_CLOTHES} from '../GraphQL/Queries';
 import { Link } from "react-router-dom";
+import ItemList from '../Components/ItemList';
 
 function GetTech(props){
     const {error, loading, data} = useQuery(LOAD_TECH);
@@ -16,7 +17,7 @@ function GetTech(props){
         
         if(data){
             console.log(data);
-            setIsLoadedItems(data.Category);
+            setIsLoadedItems(data.category.products);
             setIsLoading(false);
         }
 
@@ -33,7 +34,8 @@ function GetTech(props){
             return(
             
                 <div >
-                    <h1 >Tech</h1>
+                    <h1 >Loaded</h1>
+                    <ItemList items={loadedItems} />
                     
                 </div>
         
