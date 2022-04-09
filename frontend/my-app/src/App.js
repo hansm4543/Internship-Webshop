@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
-import CategoriePage from "./Pages/CategoriePage";
-import Empty from "./Pages/Empty";
+import Empty from "./Pages/CategorieView";
 import Cart from "./Pages/Cart";
 import SingleItem from "./Pages/SingleItem";
+import HomePage from "./Pages/HomePage";
 
 
 
@@ -13,7 +13,7 @@ function App() {
       
 
       <Routes>
-        <Route exact path="/" element={<CategoriePage/>}/>
+        <Route exact path="/" element={<HomePage/>}/>
         <Route exact path="/cart" element={<Cart/>}/>
         <Route exact path='/item/:itemId' element={<SingleItem/>}/>
         

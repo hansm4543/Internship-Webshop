@@ -1,0 +1,104 @@
+
+/*
+
+I tried to make everything in one file but i didnt know how to fix the useQuery error. It said that usequery cant be used with IF statements.
+
+*/
+
+
+
+import React, {useEffect, useState} from "react";
+import {useQuery, gql} from '@apollo/client';
+import {LOAD_ALL} from '../GraphQL/Queries';
+import {LOAD_TECH} from '../GraphQL/Queries';
+import {LOAD_CLOTHES} from '../GraphQL/Queries';
+import { Link } from "react-router-dom";
+
+function GetItems(props){
+    //console.log(props);
+    if(props.all == true){
+        const {error, loading, data} = useQuery(LOAD_ALL);
+    }else if(props.tech == true){
+        const {error, loading, data} = useQuery(LOAD_TECH);
+    }else if(props.clothes == true){
+        const {error, loading, data} = useQuery(LOAD_CLOTHES);
+    }
+
+    const [isLoading, setIsLoading] = useState(false);
+    const [loadedItems, setIsLoadedItems]=useState([]);
+
+    useEffect(()=>{
+        if(props.all == true){
+            console.log(data);
+            if(data){
+                console.log(data);
+                setIsLoadedItems(data.Category);
+                setIsLoading(false);
+            }
+            
+        }else if(props.tech == true){
+            console.log(data);
+            if(data){
+                setIsLoadedItems(data.Category);
+                setIsLoading(false);
+            }
+        }else if(props.clothes == true){
+            console.log(data);
+            if(data){
+                setIsLoadedItems(data.Category);
+                setIsLoading(false);
+            }
+            
+        }
+        
+
+        
+        
+    },[data]);
+
+    if(isLoading == true){
+        return(
+        <div>
+            Loading...
+        </div>);
+    }else{
+        if(props.all == true){
+            return(
+            
+                <div >
+                    <h1 >All</h1>
+                    
+                </div>
+        
+            )
+        }else if(props.tech == true){
+            return(
+            
+                <div >
+                    <h1 >Tech</h1>
+                    
+                </div>
+        
+            )
+        }else if(props.clothes == true){
+            return(
+            
+                <div >
+                    <h1 >Clothes</h1>
+                    
+                </div>
+        
+            )
+        }else{
+            return(
+            
+                <div >
+                    <h1 >Something went wrong</h1>
+                </div>
+        
+            )
+        }
+    }
+}
+
+export default GetItems;

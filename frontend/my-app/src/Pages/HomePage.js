@@ -5,7 +5,7 @@ import GetCategories from '../Components/GetCategories';
 
 
 
-function App() {
+function HomePage() {
   return (
     <div>
       <h1>Categories</h1>
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;

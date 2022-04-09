@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useQuery, gql} from '@apollo/client';
 import {LOAD_CATEGORIES} from '../GraphQL/Queries';
+import {LOAD_TECH} from '../GraphQL/Queries';
 import { Link } from "react-router-dom";
 
 function GetCategories(){
@@ -15,6 +16,7 @@ function GetCategories(){
         }
         
     },[data]);
+    
     return(
         <div>
             {categories.map((val)=> {
