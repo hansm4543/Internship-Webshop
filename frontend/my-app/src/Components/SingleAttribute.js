@@ -11,10 +11,9 @@ function SingleAttribute(props){
             return (
 
                 <div className="Attributes">
-                    <label  for={props.attributes.id}>Select {props.attributes.name}: </label>
-                    <select name={props.attributes.name} id={props.attributes.id}>
-                    <option  value={props.attributes.items[0].value} >{props.attributes.items[0].displayValue}</option>
-                    </select>
+                <p>Please select {props.attributes.name}:</p>
+                <input defaultChecked type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
+                <label for={props.attributes.items[0].value}>{props.attributes.items[0].displayValue}</label>
                 </div>
                 
         
@@ -24,7 +23,7 @@ function SingleAttribute(props){
                 <form>
                 <div className="Attributes">
                 <p>Please select {props.attributes.name}:</p>
-                <input type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
+                <input defaultChecked type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
                 <label for={props.attributes.items[0].value}>{props.attributes.items[0].displayValue}</label>
                 <input type="radio" id={props.attributes.items[1].value} name={props.attributes.name} value={props.attributes.items[1].displayValue}/>
                 <label for={props.attributes.items[1].value}>{props.attributes.items[1].displayValue}</label>
@@ -38,7 +37,7 @@ function SingleAttribute(props){
                 <form>
                 <div className="Attributes">
                 <p>Please select {props.attributes.name}:</p>
-                <input type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
+                <input defaultChecked type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
                 <label for={props.attributes.items[0].value}>{props.attributes.items[0].displayValue}</label>
                 <input type="radio" id={props.attributes.items[1].value} name={props.attributes.name} value={props.attributes.items[1].displayValue}/>
                 <label for={props.attributes.items[1].value}>{props.attributes.items[1].displayValue}</label>
@@ -54,7 +53,7 @@ function SingleAttribute(props){
                 <form>
                 <div className="Attributes">
                 <p>Please select {props.attributes.name}:</p>
-                <input type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
+                <input defaultChecked type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
                 <label for={props.attributes.items[0].value}>{props.attributes.items[0].displayValue}</label>
                 <input type="radio" id={props.attributes.items[1].value} name={props.attributes.name} value={props.attributes.items[1].displayValue}/>
                 <label for={props.attributes.items[1].value}>{props.attributes.items[1].displayValue}</label>
@@ -72,7 +71,7 @@ function SingleAttribute(props){
                 <form>
                 <div className="Attributes">
                 <p>Please select {props.attributes.name}:</p>
-                <input type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
+                <input defaultChecked type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
                 <label for={props.attributes.items[0].value}>{props.attributes.items[0].displayValue}</label>
                 <input type="radio" id={props.attributes.items[1].value} name={props.attributes.name} value={props.attributes.items[1].displayValue}/>
                 <label for={props.attributes.items[1].value}>{props.attributes.items[1].displayValue}</label>
@@ -92,7 +91,7 @@ function SingleAttribute(props){
                 <form>
                 <div className="Attributes">
                 <p>Please select {props.attributes.name}:</p>
-                <input type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
+                <input defaultChecked type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
                 <label for={props.attributes.items[0].value}>{props.attributes.items[0].displayValue}</label>
                 <input type="radio" id={props.attributes.items[1].value} name={props.attributes.name} value={props.attributes.items[1].displayValue}/>
                 <label for={props.attributes.items[1].value}>{props.attributes.items[1].displayValue}</label>
@@ -114,7 +113,7 @@ function SingleAttribute(props){
                 <form>
                 <div className="Attributes">
                 <p>Please select {props.attributes.name}:</p>
-                <input type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
+                <input defaultChecked type="radio" id={props.attributes.items[0].value} name={props.attributes.name} value={props.attributes.items[0].displayValue}/>
                 <label for={props.attributes.items[0].value}>{props.attributes.items[0].displayValue}</label>
                 <input type="radio" id={props.attributes.items[1].value} name={props.attributes.name} value={props.attributes.items[1].displayValue}/>
                 <label for={props.attributes.items[1].value}>{props.attributes.items[1].displayValue}</label>
