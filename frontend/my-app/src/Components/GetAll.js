@@ -33,8 +33,7 @@ function GetAll(props){
         if(props.all == true){
             return(
             
-                <div >
-                    <h1 >Loaded</h1>
+                <div>
                     <ItemList items={loadedItems} />
                     
                 </div>

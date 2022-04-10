@@ -18,11 +18,13 @@ function GetCategories(){
     },[data]);
     
     return(
-        <div>
+        <div className="mainPage">
             {categories.map((val)=> {
-                return <div>
+                let variable = val.name + ".webp"
+                //console.log(variable)
+                return <div className="mainPageCategory">
                         <Link to={`${val.name}`}>
-                            <p>{val.name}</p>
+                            <h3>{val.name}</h3>
                         </Link>
                    </div>
             })}

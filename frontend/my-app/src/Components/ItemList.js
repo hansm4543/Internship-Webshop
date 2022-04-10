@@ -8,7 +8,7 @@ import Item from "./Item";
 function ItemList(props){
     console.log(props.items);
     return(
-        <div>
+        <div className="outer-grid">
             {props.items.map((item) => (
             <Item 
                 key={item.id}

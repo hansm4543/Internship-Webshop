@@ -34,7 +34,7 @@ function GetTech(props){
             return(
             
                 <div >
-                    <h1 >Loaded</h1>
+                    
                     <ItemList items={loadedItems} />
                     
                 </div>

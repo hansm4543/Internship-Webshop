@@ -3,6 +3,7 @@ import GetAll from '../Components/GetAll';
 import GetTech from '../Components/GetTech';
 import GetClothes from '../Components/GetClothes';
 import NavBar from '../Components/NavBar';
+import './CategorieView.css';
 
 function CategorieView(){
     const PostID = window.location.href.split("/")[3];
@@ -12,8 +13,10 @@ function CategorieView(){
         
             <div >
                 <NavBar/>
-                <h1 >All</h1>
-                <GetAll all={true}/>
+                <h1 >All products</h1>
+                <div>
+                    <GetAll all={true}/>
+                </div>
             </div>
     
         )
@@ -22,8 +25,10 @@ function CategorieView(){
         
             <div >
                 <NavBar/>
-                <h1 >Tech</h1>
-                <GetTech tech={true}/>
+                <h1 >Tech products</h1>
+                <div >
+                    <GetTech tech={true}/>
+                </div>
             </div>
     
         )
@@ -33,7 +38,9 @@ function CategorieView(){
             <div >
                 <NavBar/>
                 <h1 >Clothes</h1>
-                <GetClothes clothes={true}/>
+                <div >
+                    <GetClothes clothes={true}/>
+                </div>
             </div>
     
         )

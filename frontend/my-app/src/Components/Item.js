@@ -11,14 +11,17 @@ function Item(props){
     if(props.instock == true){
         return (
             
-            <div id="Item">
-                <Link to={`item/${props.id}`}>
-                <div id="pictureFrame">
-                    <img className="itemPicture" src={props.pic0}></img>
+            <div id="Item" className="inner-grid">
+                <Link style={{ textDecoration: 'none', color: 'none'}} to={`item/${props.id}`}>
+                <div id="item1">
+                    
+                    <img style={{padding: 10}} className="itemPicture" src={props.pic0}></img>
+                    
                 </div> 
-                <div className="itemName">{props.id}</div>
-                <div className="itemName">{props.brand}{props.name}</div>
-                <div className="itemPrice">{props.priceUSDSymbol}{props.priceUSD}</div>
+                <div id="item1">
+                        <div className="itemName">{props.brand}{props.name}</div>
+                        <div className="itemPrice">{props.priceUSDSymbol}{props.priceUSD}</div>
+                </div>
                 </Link>
             </div>
             
@@ -26,17 +29,21 @@ function Item(props){
     }else{
         return (
             
-                <div id="Item">
-                    <Link to={`item/${props.id}`}>
-                    <div id="pictureFrame">
-                        <div className="itemStock">Out of Stock</div>
-                        <img className="itemPicture" src={props.pic0}></img>
+                <div id="Item" className="inner-grid">
+                    <Link style={{ textDecoration: 'none', color: 'none'}} to={`item/${props.id}`}>
+                    <div id="item1" >
+                        <div className="container">
+                        <img style={{opacity: 0.5, padding: 10}} className="itemPicture" src={props.pic0}></img>
+                        <div className="itemStock centered">Out of Stock</div>
+                        </div>
+
                     </div>
-                    <div className="itemName">{props.id}</div>
-                    <div className="itemName">{props.brand}{props.name}</div>
-                    <div className="itemPrice">{props.priceUSDSymbol}{props.priceUSD}</div>
-                    
+                    <div id="item1">
+                        <div className="itemName">{props.brand}{props.name}</div>
+                        <div className="itemPrice">{props.priceUSDSymbol}{props.priceUSD}</div>
+                    </div>
                     </Link>
+                    
                 </div>
             
         )

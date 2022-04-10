@@ -90,6 +90,9 @@ function SingleItem(){
                     {description}
                     <h1 >{symbol}{price.amount}</h1>
                     <img className="itemPicture" src={pictures[0]}></img>
+                    <img className="itemPicture" src={pictures[1]}></img>
+                    <img className="itemPicture" src={pictures[2]}></img>
+                    <img className="itemPicture" src={pictures[3]}></img>
                     <Attributes attributes={attributes}/>
 
                 </div>
