@@ -8,7 +8,7 @@ function GetClothes(props){
     const {error, loading, data} = useQuery(LOAD_CLOTHES);
 
 
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [loadedItems, setIsLoadedItems]=useState([]);
 
     useEffect(()=>{

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Item from "../Components/Item";
 import { Link } from "react-router-dom";
 import NavBar from '../Components/NavBar';
+import Attributes from '../Components/Attributes';
 import './SingleItem.css';
 
 
@@ -16,6 +17,7 @@ function SingleItem(){
     const [symbol, setSymbol]=useState([]);
     const [description, setDescription]=useState("");
     const [pictures, setPictures]=useState([]);
+    const [attributes, setAttributes]=useState(null);
 
     
     useEffect(()=>{
@@ -63,6 +65,7 @@ function SingleItem(){
             let cleanText = data.data.product.description.replace(/<\/?[^>]+(>|$)/g, "");
             setDescription(cleanText);
             setPictures(data.data.product.gallery);
+            setAttributes(data.data.product.attributes);
         })
             
         
@@ -87,15 +90,27 @@ function SingleItem(){
                     {description}
                     <h1 >{symbol}{price.amount}</h1>
                     <img className="itemPicture" src={pictures[0]}></img>
+                    <Attributes attributes={attributes}/>
 
                 </div>
 
             )
         }else{
             return(
-                <div>
-                    jou
-                </div>
+               
+                <div >
+                <NavBar/>
+                <h1 >Detailed view</h1>
+                <h1 >{product.name}</h1>
+                <h1 >{product.instock}</h1>
+                <h1 >{product.brand}</h1>
+                <h1 >Not in stock</h1>
+                {description}
+                <h1 >{symbol}{price.amount}</h1>
+                <img className="itemPicture" src={pictures[0]}></img>
+                <Attributes attributes={attributes}/>
+
+            </div>
             )
         }
     }
