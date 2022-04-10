@@ -84,17 +84,32 @@ function SingleItem(){
                 <div >
                     <NavBar/>
                     <h1 >Detailed view</h1>
-                    <h1 >{product.name}</h1>
-                    <h1 >{product.instock}</h1>
-                    <h1 >{product.brand}</h1>
-                    {description}
-                    <h1 >{symbol}{price.amount}</h1>
-                    <img className="itemPicture" src={pictures[0]}></img>
-                    <img className="itemPicture" src={pictures[1]}></img>
-                    <img className="itemPicture" src={pictures[2]}></img>
-                    <img className="itemPicture" src={pictures[3]}></img>
-                    <Attributes attributes={attributes}/>
-
+                    <div className="grid-container">
+                        <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                        
+                        
+                        <img className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                        
+                        <img className="itemPicture4" src={pictures[0]}></img>
+                        <img className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                        <div className="innerdetails-grid">
+                            <h2 className="brandName">{product.brand}</h2>
+                            <p className="itemNamel">{product.name}</p>
+                            
+                            <p className="price">{symbol}{price.amount}</p>
+                            <div className="allOptions">
+                                <Attributes attributes={attributes}/>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div>ADD TO CART</div>
+                            <br/>
+                            <br/>
+                            <div className="description">
+                                {description}
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             )
