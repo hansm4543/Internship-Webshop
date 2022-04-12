@@ -12,7 +12,7 @@ function Item(props){
         return (
             
             <div id="Item" className="inner-grid">
-                <Link style={{ textDecoration: 'none', color: 'none'}} to={`item/${props.id}`}>
+                <Link style={{ textDecoration: 'none', color: 'none'}} to={`/item/${props.id}`}>
                 <div id="item1">
                     
                     <img style={{padding: 10}} className="itemPicture" src={props.pic0}></img>
@@ -30,7 +30,7 @@ function Item(props){
         return (
             
                 <div id="Item" className="inner-grid">
-                    <Link style={{ textDecoration: 'none', color: 'none'}} to={`item/${props.id}`}>
+                    <Link style={{ textDecoration: 'none', color: 'none'}} to={`/item/${props.id}`}>
                     <div id="item1" >
                         <div className="container">
                         <img style={{opacity: 0.5, padding: 10}} className="itemPicture" src={props.pic0}></img>

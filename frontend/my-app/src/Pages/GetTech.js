@@ -1,14 +1,18 @@
 import React, {useEffect, useState} from "react";
 import {useQuery, gql} from '@apollo/client';
-import ItemList from '../Components/ItemList';
+import {LOAD_ALL} from '../GraphQL/Queries';
+import {LOAD_TECH} from '../GraphQL/Queries';
 import {LOAD_CLOTHES} from '../GraphQL/Queries';
 import { Link } from "react-router-dom";
+import ItemList from '../Components/ItemList';
+import NavBar from '../Components/NavBar';
+import './CategorieView.css';
 
-function GetClothes(props){
-    const {error, loading, data} = useQuery(LOAD_CLOTHES);
+function GetTech(props){
+    const {error, loading, data} = useQuery(LOAD_TECH);
 
 
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
     const [loadedItems, setIsLoadedItems]=useState([]);
 
     useEffect(()=>{
@@ -18,7 +22,6 @@ function GetClothes(props){
             setIsLoadedItems(data.category.products);
             setIsLoading(false);
         }
-        console.log(loadedItems);
 
         
     },[data]);
@@ -29,27 +32,21 @@ function GetClothes(props){
             Loading...
         </div>);
     }else{
-        if(props.clothes == true){
-            
-            return(
-            
-                <div >
-                    <ItemList items={loadedItems} />
 
+            return(
+                <div >
+                <NavBar tech={true}/>
+                <h1 >Tech products</h1>
+                <div >
+                    
+                    <ItemList items={loadedItems} />
                     
                 </div>
-        
-            )
-        }else{
-            return(
-            
-                <div >
-                    <h1 >Something went wrong</h1>
                 </div>
         
             )
-        }
+
     }
 }
 
-export default GetClothes;
+export default GetTech;

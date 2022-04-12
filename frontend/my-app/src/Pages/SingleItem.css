@@ -10,6 +10,12 @@
    height: 200px;
    object-fit: scale-down;
 }
+.itemPicture4{
+
+  width:  400px;
+  height: 800px;
+  object-fit: scale-down;
+}
 
 .grid-container {
    display: grid;

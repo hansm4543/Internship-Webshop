@@ -5,6 +5,8 @@ import {LOAD_TECH} from '../GraphQL/Queries';
 import {LOAD_CLOTHES} from '../GraphQL/Queries';
 import { Link } from "react-router-dom";
 import ItemList from '../Components/ItemList';
+import NavBar from '../Components/NavBar';
+import './CategorieView.css';
 
 function GetAll(props){
     const {error, loading, data} = useQuery(LOAD_ALL);
@@ -30,24 +32,18 @@ function GetAll(props){
             Loading...
         </div>);
     }else{
-        if(props.all == true){
+        
             return(
-            
                 <div>
-                    <ItemList items={loadedItems} />
-                    
+                <NavBar all={true}/>
+                    <h1 >All products</h1>
+                    <div>
+                        <ItemList items={loadedItems} />
+                        
+                    </div>
                 </div>
-        
             )
-        }else{
-            return(
-            
-                <div >
-                    <h1 >Something went wrong</h1>
-                </div>
         
-            )
-        }
     }
 }
 

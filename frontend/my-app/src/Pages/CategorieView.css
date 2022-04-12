@@ -84,24 +84,49 @@ a:-webkit-any-link {
     font-style: bold;
 }
 
-.kids{
+.clothes{
+    display: inline-block;
+    padding-left: 1rem;
+    padding-top: 1rem;;
+    
+}
+.clothesSelected{
     display: inline-block;
     padding-left: 1rem;
     padding-right: 40rem;
     padding-top: 1rem;;
+    padding: 5px;
+    border: 5px solid lightgreen ;
+    border-radius: 10px;
     
 }
-.men{
+.tech{
     display: inline-block;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding: 5px;
 }
-.women{
+.techSelected{
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+
+    padding: 5px;
+    border: 5px solid lightgreen ;
+    border-radius: 10px;
+}
+.all{
     display: inline-block;
     margin-left: 5rem;
     margin-right: 1rem;
+    margin-top: 1rem;
+    
+}
+.allSelected{
+    display: inline-block;
+    margin-left: 5rem;
     margin-top: 1rem;
     padding: 5px;
     border: 5px solid lightgreen ;
@@ -109,7 +134,10 @@ a:-webkit-any-link {
 }
 
 .logo{
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-right: 55rem;
+  margin-top: 1rem;
+  margin-left: 770px
+}
+.cart{
+  margin-top: 1rem;
+  margin-left: 700px
 }
