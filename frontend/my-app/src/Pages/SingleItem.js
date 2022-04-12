@@ -117,6 +117,41 @@ function SingleItem(){
                     </div>
     
                 )
+            }else{
+                return(
+                   
+                    <div >
+                        <NavBar/>
+                        <h1 >Detailed view</h1>
+                        <div className="grid-container">
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            
+                            
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            
+                            <img className="itemPicture4" src={pictures[0]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <div className="innerdetails-grid">
+                                <h2 className="brandName">{product.brand}</h2>
+                                <p className="itemNamel">{product.name}</p>
+                                
+                                <p className="price">{symbol}{price.amount}</p>
+                                <div className="allOptions">
+                                    <Attributes attributes={attributes}/>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div>PRODUCT IS NOT IN STOCK</div>
+                                <br/>
+                                <br/>
+                                <div className="description">
+                                    {description}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                )
             }
 
         }else if(pictures.length == 2){
@@ -144,6 +179,41 @@ function SingleItem(){
                                 <br/>
                                 <br/>
                                 <div>ADD TO CART</div>
+                                <br/>
+                                <br/>
+                                <div className="description">
+                                    {description}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                )
+            }else{
+                return(
+                   
+                    <div >
+                        <NavBar/>
+                        <h1 >Detailed view</h1>
+                        <div className="grid-container">
+                            <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            
+                            
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            
+                            <img className="itemPicture4" src={pictures[0]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <div  className="innerdetails-grid">
+                                <h2 className="brandName">{product.brand}</h2>
+                                <p className="itemNamel">{product.name}</p>
+                                
+                                <p className="price">{symbol}{price.amount}</p>
+                                <div className="allOptions">
+                                    <Attributes attributes={attributes}/>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div>PRODUCT IS NOT IN STOCK</div>
                                 <br/>
                                 <br/>
                                 <div className="description">
@@ -190,42 +260,113 @@ function SingleItem(){
                     </div>
     
                 )
-            }
-        }else{
-            return(
-               
-                <div >
-                    <NavBar/>
-                    <h1 >Detailed view</h1>
-                    <div className="grid-container">
-                        <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
-                        
-                        
-                        <img className="itemPicturel itemPicture2" src={pictures[3]}></img>
-                        
-                        <img className="itemPicture4" src={pictures[0]}></img>
-                        <img className="itemPicturel itemPicture3" src={pictures[2]}></img>
-                        <div className="innerdetails-grid">
-                            <h2 className="brandName">{product.brand}</h2>
-                            <p className="itemNamel">{product.name}</p>
+            }else{
+                return(
+                   
+                    <div >
+                        <NavBar/>
+                        <h1 >Detailed view</h1>
+                        <div className="grid-container">
+                            <img  className="itemPicturel itemPicture1" src={pictures[1]}></img>
                             
-                            <p className="price">{symbol}{price.amount}</p>
-                            <div className="allOptions">
-                                <Attributes attributes={attributes}/>
-                            </div>
-                            <br/>
-                            <br/>
-                            <div>PRODUCT IS NOT IN STOCK</div>
-                            <br/>
-                            <br/>
-                            <div className="description">
-                                {description}
+                            
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            
+                            <img className="itemPicture4" src={pictures[0]}></img>
+                            <img  className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <div className="innerdetails-grid">
+                                <h2 className="brandName">{product.brand}</h2>
+                                <p className="itemNamel">{product.name}</p>
+                                
+                                <p className="price">{symbol}{price.amount}</p>
+                                <div className="allOptions">
+                                    <Attributes attributes={attributes}/>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div>PRODUCT IS NOT IN STOCK</div>
+                                <br/>
+                                <br/>
+                                <div className="description">
+                                    {description}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-            )
+    
+                )
+            }
+        }else{
+            if(product.inStock == true){
+                return(
+                    <div >
+                        <NavBar/>
+                        <h1 >Detailed view</h1>
+                        <div className="grid-container">
+                            <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            
+                            
+                            <img className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            
+                            <img className="itemPicture4" src={pictures[0]}></img>
+                            <img  className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <div className="innerdetails-grid">
+                                <h2 className="brandName">{product.brand}</h2>
+                                <p className="itemNamel">{product.name}</p>
+                                
+                                <p className="price">{symbol}{price.amount}</p>
+                                <div className="allOptions">
+                                    <Attributes attributes={attributes}/>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div>ADD TO CART</div>
+                                <br/>
+                                <br/>
+                                <div className="description">
+                                    {description}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                )
+            }else{
+                return(
+                   
+                    <div >
+                        <NavBar/>
+                        <h1 >Detailed view</h1>
+                        <div className="grid-container">
+                            <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            
+                            
+                            <img className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            
+                            <img className="itemPicture4" src={pictures[0]}></img>
+                            <img className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <div className="innerdetails-grid">
+                                <h2 className="brandName">{product.brand}</h2>
+                                <p className="itemNamel">{product.name}</p>
+                                
+                                <p className="price">{symbol}{price.amount}</p>
+                                <div className="allOptions">
+                                    <Attributes attributes={attributes}/>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div>PRODUCT IS NOT IN STOCK</div>
+                                <br/>
+                                <br/>
+                                <div className="description">
+                                    {description}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                )
+            }
         }
     }
 }
