@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Store from './Store/index'
 
 import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from,} from '@apollo/client';
 
@@ -29,7 +30,9 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <App />
+      <Store>
+        <App />
+      </Store>
     </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')

@@ -5,6 +5,9 @@ import {LOAD_CLOTHES} from '../GraphQL/Queries';
 import { Link } from "react-router-dom";
 import NavBar from '../Components/NavBar';
 import './CategorieView.css';
+import {useContext} from 'react'
+import {Context} from "../Store"
+import { currencyChange } from "../Store/actions";
 
 function GetClothes(props){
     const {error, loading, data} = useQuery(LOAD_CLOTHES);
@@ -12,6 +15,8 @@ function GetClothes(props){
 
     const [isLoading, setIsLoading] = useState(true);
     const [loadedItems, setIsLoadedItems]=useState([]);
+    const [state, dispatch] = useContext(Context)
+    console.log(state)
 
     useEffect(()=>{
         
@@ -20,10 +25,20 @@ function GetClothes(props){
             setIsLoadedItems(data.category.products);
             setIsLoading(false);
         }
-        console.log(loadedItems);
+        //console.log(loadedItems);
 
         
-    },[data]);
+    },[data, state]);
+
+    function itemSubmitHandler(number, data){
+        if(number === 1){
+            //console.log("Õnnestus");
+            dispatch(currencyChange(data));
+        }else{
+            //console.log("Failed");
+        }
+
+    }
 
     if(isLoading == true){
         return(
@@ -34,10 +49,10 @@ function GetClothes(props){
             
             return(
                 <div>
-                <NavBar clothes={true}/>
+                <NavBar clothes={true} onCurrencyChange={itemSubmitHandler}/>
                 <h1 >Clothes</h1>
                 <div >
-                    <ItemList items={loadedItems} />
+                    <ItemList items={loadedItems} currency={state.currency}/>
 
                     
                 </div>

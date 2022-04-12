@@ -90,6 +90,12 @@ a:-webkit-any-link {
     padding-top: 1rem;;
     
 }
+.currencies{
+    display: inline-block;
+    padding-left: 1rem;
+    padding-top: 1rem;;
+    
+}
 .clothesSelected{
     display: inline-block;
     padding-left: 1rem;
@@ -135,9 +141,10 @@ a:-webkit-any-link {
 
 .logo{
   margin-top: 1rem;
-  margin-left: 770px
+  margin-left: 770px;
+  margin-right: 500px
 }
 .cart{
   margin-top: 1rem;
-  margin-left: 700px
+  margin-left: 0px
 }

@@ -2,6 +2,15 @@
 import { Link } from 'react-router-dom';
 
 function Navbar (props){
+    console.log(props)
+    const onPriceChange= (value) => {
+        //console.log(value)
+        var el = document.getElementById('currencies');
+        const data = el.value.split(" ");
+        //console.log(data);
+        props.onCurrencyChange(1, data);
+    };
+
     if(props.all == true){
         return (
             <div className="navbar">
@@ -24,6 +33,15 @@ function Navbar (props){
                 <Link to ="/">
                     <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                 </Link>
+                <div className='currencies'>
+                    <select onChange={onPriceChange} id="currencies">
+                    <option value="USD" selected>$ USD</option>
+                    <option value="GBP">£ GBP</option>
+                    <option value="AUD">A$ AUD</option>
+                    <option value="JPY">¥ JPY</option>
+                    <option value="RUB">₽ RUB</option>
+                    </select>
+                </div>
                 <Link to="/cart">
                 <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
                 </Link>
@@ -52,6 +70,15 @@ function Navbar (props){
                 <Link to ="/">
                     <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                 </Link>
+                <div className='currencies'>
+                    <select onChange={onPriceChange}  id="currencies">
+                    <option value="USD" selected>$ USD</option>
+                    <option value="GBP">£ GBP</option>
+                    <option value="AUD">A$ AUD</option>
+                    <option value="JPY">¥ JPY</option>
+                    <option value="RUB">₽ RUB</option>
+                    </select>
+                </div>
                 <Link to="/cart">
                 <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
                 </Link>
@@ -79,13 +106,22 @@ function Navbar (props){
                 <Link to ="/">
                     <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                 </Link>
+                <div className='currencies'>
+                    <select onChange={onPriceChange}  id="currencies">
+                    <option value="USD" selected>$ USD</option>
+                    <option value="GBP">£ GBP</option>
+                    <option value="AUD">A$ AUD</option>
+                    <option value="JPY">¥ JPY</option>
+                    <option value="RUB">₽ RUB</option>
+                    </select>
+                </div>
                 <Link to="/cart">
                 <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
                 </Link>
                 <hr></hr>
             </div>
         );
-    }
+    }else{
     return (
         <div className="navbar">
             <Link to ="/" className='all'>
@@ -100,7 +136,15 @@ function Navbar (props){
             <Link to ="/">
                 <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
             </Link>
-
+            <div className='currencies'>
+                    <select onChange={onPriceChange} id="currencies">
+                    <option value="USD" selected>$ USD</option>
+                    <option value="GBP">£ GBP</option>
+                    <option value="AUD">A$ AUD</option>
+                    <option value="JPY">¥ JPY</option>
+                    <option value="RUB">₽ RUB</option>
+                    </select>
+                </div>
 
             <Link to="/cart">
                 <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
@@ -108,7 +152,9 @@ function Navbar (props){
         <hr></hr>
         </div>
     );
+    }
 
+    
 }
 
 export default Navbar;

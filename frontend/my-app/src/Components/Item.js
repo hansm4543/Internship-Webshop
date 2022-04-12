@@ -20,7 +20,7 @@ function Item(props){
                 </div> 
                 <div id="item1">
                         <div className="itemName">{props.brand}{props.name}</div>
-                        <div className="itemPrice">{props.priceUSDSymbol}{props.priceUSD}</div>
+                        <div className="itemPrice">{props.priceSymbol}{props.price}</div>
                 </div>
                 </Link>
             </div>
@@ -40,7 +40,7 @@ function Item(props){
                     </div>
                     <div id="item1">
                         <div className="itemName">{props.brand}{props.name}</div>
-                        <div className="itemPrice">{props.priceUSDSymbol}{props.priceUSD}</div>
+                        <div className="itemPrice">{props.priceSymbol}{props.price}</div>
                     </div>
                     </Link>
                     
