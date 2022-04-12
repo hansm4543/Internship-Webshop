@@ -5,7 +5,7 @@ import SingleAttribute from "./SingleAttribute";
 
 function Attributes(props){
 
-    console.log(props)
+    //console.log(props)
     if(props.attributes != null){
         
         if(props.attributes.length == 1){

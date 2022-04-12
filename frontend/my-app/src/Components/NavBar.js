@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 
 function Navbar (props){
-    console.log(props)
+    //console.log(props)
     const onPriceChange= (value) => {
         //console.log(value)
         var el = document.getElementById('currencies');
