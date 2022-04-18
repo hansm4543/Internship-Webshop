@@ -8,6 +8,7 @@ Main Idea:
 Make a store webpage that has cart and currency changing ability
 
 ## Application functional details:
+* You can filter through diffrent categories
 * You can open item's detailed view
 * You can change currency on website
 
