@@ -27,6 +27,8 @@ Make a store webpage that has cart and currency changing ability
 ![Source code](pictures/ItemHover.png)
 * DetailedView
 ![Source code](pictures/DetailedView.PNG)
+* Currency Change
+![Source code](pictures/CurrencyChange.PNG)
 
 </br>
 
