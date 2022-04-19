@@ -34,6 +34,7 @@ class App extends React.Component {
   }
 }
 /*
+https://www.youtube.com/watch?v=LZKsD_5ttZ4
 https://www.w3schools.com/react/react_class.asp
 https://reactjs.org/tutorial/tutorial.html
 

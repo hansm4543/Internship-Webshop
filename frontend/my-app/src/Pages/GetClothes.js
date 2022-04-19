@@ -11,38 +11,39 @@ import { currencyChange } from "../Store/actions";
 /*
 class GetClothes extends React.Component {
     constructor(){
+        
+    } 
+
+   
+    render() {
         const {error, loading, data} = useQuery(LOAD_CLOTHES);
         const [isLoading, setIsLoading] = useState(true);
         const [loadedItems, setIsLoadedItems]=useState([]);
         const [state, dispatch] = useContext(Context);
         console.log(state);
-    } 
-
-
     
 
-    useEffect(()=>{
-        
-        if(data){
-            console.log(data);
-            setIsLoadedItems(data.category.products);
-            setIsLoading(false);
+        useEffect(()=>{
+            
+            if(data){
+                console.log(data);
+                setIsLoadedItems(data.category.products);
+                setIsLoading(false);
+            }
+            //console.log(loadedItems);
+
+            
+        },[data, state]);
+
+        function itemSubmitHandler(number, data){
+            if(number === 1){
+                //console.log("Õnnestus");
+                dispatch(currencyChange(data));
+            }else{
+                //console.log("Failed");
+            }
+
         }
-        //console.log(loadedItems);
-
-        
-    },[data, state]);
-
-    function itemSubmitHandler(number, data){
-        if(number === 1){
-            //console.log("Õnnestus");
-            dispatch(currencyChange(data));
-        }else{
-            //console.log("Failed");
-        }
-
-    }
-    render() {
         if(isLoading == true){
             return(
             <div>
