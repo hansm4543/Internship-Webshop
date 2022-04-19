@@ -9,7 +9,7 @@ import {useContext} from 'react'
 import {Context} from "../Store"
 import { currencyChange } from "../Store/actions";
 
-function GetAll(props){
+function GetAll(){
     const {error, loading, data} = useQuery(LOAD_ALL);
 
 

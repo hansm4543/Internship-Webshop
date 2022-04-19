@@ -8,7 +8,7 @@ import {useContext} from 'react'
 import {Context} from "../Store"
 import { currencyChange } from "../Store/actions";
 
-function GetTech(props){
+function GetTech(){
     const {error, loading, data} = useQuery(LOAD_TECH);
 
 

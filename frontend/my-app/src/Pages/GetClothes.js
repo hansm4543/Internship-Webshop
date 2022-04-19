@@ -8,8 +8,66 @@ import './CategorieView.css';
 import {useContext} from 'react'
 import {Context} from "../Store"
 import { currencyChange } from "../Store/actions";
+/*
+class GetClothes extends React.Component {
+    constructor(){
+        const {error, loading, data} = useQuery(LOAD_CLOTHES);
+        const [isLoading, setIsLoading] = useState(true);
+        const [loadedItems, setIsLoadedItems]=useState([]);
+        const [state, dispatch] = useContext(Context);
+        console.log(state);
+    } 
 
-function GetClothes(props){
+
+    
+
+    useEffect(()=>{
+        
+        if(data){
+            console.log(data);
+            setIsLoadedItems(data.category.products);
+            setIsLoading(false);
+        }
+        //console.log(loadedItems);
+
+        
+    },[data, state]);
+
+    function itemSubmitHandler(number, data){
+        if(number === 1){
+            //console.log("Õnnestus");
+            dispatch(currencyChange(data));
+        }else{
+            //console.log("Failed");
+        }
+
+    }
+    render() {
+        if(isLoading == true){
+            return(
+            <div>
+                Loading...
+            </div>);
+        }else{
+                
+                return(
+                    <div>
+                    <NavBar clothes={true} onCurrencyChange={itemSubmitHandler}/>
+                    <h1 >Clothes</h1>
+                    <div >
+                        <ItemList items={loadedItems} currency={state.currency}/>
+    
+                        
+                    </div>
+                    </div>
+                );
+            
+        }
+    }
+}
+*/
+
+function GetClothes(){
     const {error, loading, data} = useQuery(LOAD_CLOTHES);
 
 
