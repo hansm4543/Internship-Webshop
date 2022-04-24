@@ -1,4 +1,4 @@
-import { POST_ADD, POST_REMOVE, USER_LOGIN, USER_LOGOUT } from "./actions";
+import { CART_ADD, CART_REMOVE, CURRENCY_CHANGE } from "./actions";
 
 const cartReducer = (state, action) => {
     switch(action.type){
