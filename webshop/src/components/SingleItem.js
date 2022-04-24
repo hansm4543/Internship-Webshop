@@ -33,6 +33,7 @@ class SingleItem extends Component{
             attributes
         }
     }
+    //<button> click={(e) => this.props.addToCart(this.props.cartItems, item)}</button>
     componentDidMount(){
         const itemID = window.location.href.split("/item/")[1];
         console.log(itemID);
@@ -89,8 +90,13 @@ class SingleItem extends Component{
             
             this.setState({ priceAUD: data.data.product.prices[2].amount });
             this.setState({ symbolAUD: data.data.product.prices[2].currency.symbol });
+            let productwithID = data.data.product;
+            productwithID.id = itemID ;
+            //console.log(productwithID);
 
-            this.setState({ product: data.data.product });
+            //let newObj = Object.assign(data.data.product, { 3: { name: "Lucas" } });
+            //productwithID.push({id:itemID});
+            this.setState({ product: productwithID });
             let cleanText = data.data.product.description.replace(/<\/?[^>]+(>|$)/g, "");
             this.setState({ description: cleanText });
 
@@ -110,36 +116,36 @@ class SingleItem extends Component{
             }
     
         }
-
-        if(this.state.pictures.length == 1){
-            if(product.inStock == true){
+        //console.log(this.state.this.state.product.inStock)
+        if(this.state.pictures.length === 1){
+            if(this.state.product.inStock == true){
                 return(
                     <div >
                         
                         <h1 >Detailed view</h1>
                         <div className="grid-container">
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture1" src={this.state.pictures[1]}></img>
                             
                             
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={this.state.pictures[3]}></img>
                             
-                            <img className="itemPicture4" src={pictures[0]}></img>
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <img className="itemPicture4" src={this.state.pictures[0]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={this.state.pictures[2]}></img>
                             <div className="innerdetails-grid">
-                                <h2 className="brandName">{product.brand}</h2>
-                                <p className="itemNamel">{product.name}</p>
-                                <GiveBackPrice currency={this.state.currency} priceUSD={priceUSD} symbolUSD={symbolUSD} priceGBP={priceGBP} symbolGBP={symbolGBP} priceRUB={priceRUB} symbolRUB={symbolRUB} priceAUD={priceAUD} symbolAUD={symbolAUD} priceJPY={priceJPY} symbolJPY={symbolJPY}/>
+                                <h2 className="brandName">{this.state.product.brand}</h2>
+                                <p className="itemNamel">{this.state.product.name}</p>
                                 
+                                <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={attributes}/>
+                                    <Attributes attributes={this.state.attributes}/>
                                 </div>
                                 <br/>
                                 <br/>
-                                <div>ADD TO CART</div>
+                                <button onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">
-                                    {description}
+                                    {this.state.description}
                                 </div>
                             </div>
                         </div>
@@ -153,20 +159,20 @@ class SingleItem extends Component{
                         
                         <h1 >Detailed view</h1>
                         <div className="grid-container">
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture1" src={this.state.pictures[1]}></img>
                             
                             
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={this.state.pictures[3]}></img>
                             
-                            <img className="itemPicture4" src={pictures[0]}></img>
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <img className="itemPicture4" src={this.state.pictures[0]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={this.state.pictures[2]}></img>
                             <div className="innerdetails-grid">
-                                <h2 className="brandName">{product.brand}</h2>
-                                <p className="itemNamel">{product.name}</p>
+                                <h2 className="brandName">{this.state.product.brand}</h2>
+                                <p className="itemNamel">{this.state.product.name}</p>
                                 
-                                <GiveBackPrice currency={this.state.currency} priceUSD={priceUSD} symbolUSD={symbolUSD} priceGBP={priceGBP} symbolGBP={symbolGBP} priceRUB={priceRUB} symbolRUB={symbolRUB} priceAUD={priceAUD} symbolAUD={symbolAUD} priceJPY={priceJPY} symbolJPY={symbolJPY}/>
+                                <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={attributes}/>
+                                    <Attributes attributes={this.state.attributes}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -174,7 +180,7 @@ class SingleItem extends Component{
                                 <br/>
                                 <br/>
                                 <div className="description">
-                                    {description}
+                                    {this.state.description}
                                 </div>
                             </div>
                         </div>
@@ -184,34 +190,34 @@ class SingleItem extends Component{
             }
 
         }else if(pictures.length == 2){
-            if(product.inStock == true){
+            if(this.state.product.inStock == true){
                 return(
                     <div >
                         
                         <h1 >Detailed view</h1>
                         <div className="grid-container">
-                            <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            <img className="itemPicturel itemPicture1" src={this.state.pictures[1]}></img>
                             
                             
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={this.state.pictures[3]}></img>
                             
-                            <img className="itemPicture4" src={pictures[0]}></img>
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={pictures[2]}></img>
-                            <div className="innerdetails-grid">
-                                <h2 className="brandName">{product.brand}</h2>
-                                <p className="itemNamel">{product.name}</p>
+                            <img className="itemPicture4" src={this.state.pictures[0]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={this.state.pictures[2]}></img>
+                            <div  className="innerdetails-grid">
+                                <h2 className="brandName">{this.state.product.brand}</h2>
+                                <p className="itemNamel">{this.state.product.name}</p>
                                 
-                                <GiveBackPrice currency={this.state.currency} priceUSD={priceUSD} symbolUSD={symbolUSD} priceGBP={priceGBP} symbolGBP={symbolGBP} priceRUB={priceRUB} symbolRUB={symbolRUB} priceAUD={priceAUD} symbolAUD={symbolAUD} priceJPY={priceJPY} symbolJPY={symbolJPY}/>
+                                <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={attributes}/>
+                                    <Attributes attributes={this.state.attributes}/>
                                 </div>
                                 <br/>
                                 <br/>
-                                <div>ADD TO CART</div>
+                                <button onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">
-                                    {description}
+                                    {this.state.description}
                                 </div>
                             </div>
                         </div>
@@ -225,20 +231,20 @@ class SingleItem extends Component{
                         
                         <h1 >Detailed view</h1>
                         <div className="grid-container">
-                            <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            <img className="itemPicturel itemPicture1" src={this.state.pictures[1]}></img>
                             
                             
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={this.state.pictures[3]}></img>
                             
-                            <img className="itemPicture4" src={pictures[0]}></img>
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <img className="itemPicture4" src={this.state.pictures[0]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture3" src={this.state.pictures[2]}></img>
                             <div  className="innerdetails-grid">
-                                <h2 className="brandName">{product.brand}</h2>
-                                <p className="itemNamel">{product.name}</p>
+                                <h2 className="brandName">{this.state.product.brand}</h2>
+                                <p className="itemNamel">{this.state.product.name}</p>
                                 
-                                <GiveBackPrice currency={this.state.currency} priceUSD={priceUSD} symbolUSD={symbolUSD} priceGBP={priceGBP} symbolGBP={symbolGBP} priceRUB={priceRUB} symbolRUB={symbolRUB} priceAUD={priceAUD} symbolAUD={symbolAUD} priceJPY={priceJPY} symbolJPY={symbolJPY}/>
+                                <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={attributes}/>
+                                    <Attributes attributes={this.state.attributes}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -246,7 +252,7 @@ class SingleItem extends Component{
                                 <br/>
                                 <br/>
                                 <div className="description">
-                                    {description}
+                                    {this.state.description}
                                 </div>
                             </div>
                         </div>
@@ -255,34 +261,34 @@ class SingleItem extends Component{
                 )
             }
         }else if(pictures.length == 3){
-            if(product.inStock == true){
+            if(this.state.product.inStock == true){
                 return(
                     <div >
                         
                         <h1 >Detailed view</h1>
                         <div className="grid-container">
-                            <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            <img  className="itemPicturel itemPicture1" src={this.state.pictures[1]}></img>
                             
                             
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={this.state.pictures[3]}></img>
                             
-                            <img className="itemPicture4" src={pictures[0]}></img>
-                            <img  className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <img className="itemPicture4" src={this.state.pictures[0]}></img>
+                            <img  className="itemPicturel itemPicture3" src={this.state.pictures[2]}></img>
                             <div className="innerdetails-grid">
-                                <h2 className="brandName">{product.brand}</h2>
-                                <p className="itemNamel">{product.name}</p>
+                                <h2 className="brandName">{this.state.product.brand}</h2>
+                                <p className="itemNamel">{this.state.product.name}</p>
                                 
-                                <GiveBackPrice currency={this.state.currency} priceUSD={priceUSD} symbolUSD={symbolUSD} priceGBP={priceGBP} symbolGBP={symbolGBP} priceRUB={priceRUB} symbolRUB={symbolRUB} priceAUD={priceAUD} symbolAUD={symbolAUD} priceJPY={priceJPY} symbolJPY={symbolJPY}/>
+                                <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={attributes}/>
+                                    <Attributes attributes={this.state.attributes}/>
                                 </div>
                                 <br/>
                                 <br/>
-                                <div>ADD TO CART</div>
+                                <button onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">
-                                    {description}
+                                    {this.state.description}
                                 </div>
                             </div>
                         </div>
@@ -296,20 +302,20 @@ class SingleItem extends Component{
                         
                         <h1 >Detailed view</h1>
                         <div className="grid-container">
-                            <img  className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            <img  className="itemPicturel itemPicture1" src={this.state.pictures[1]}></img>
                             
                             
-                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            <img style={{opacity: 0}} className="itemPicturel itemPicture2" src={this.state.pictures[3]}></img>
                             
-                            <img className="itemPicture4" src={pictures[0]}></img>
-                            <img  className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <img className="itemPicture4" src={this.state.pictures[0]}></img>
+                            <img  className="itemPicturel itemPicture3" src={this.state.pictures[2]}></img>
                             <div className="innerdetails-grid">
-                                <h2 className="brandName">{product.brand}</h2>
-                                <p className="itemNamel">{product.name}</p>
+                                <h2 className="brandName">{this.state.product.brand}</h2>
+                                <p className="itemNamel">{this.state.product.name}</p>
                                 
-                                <GiveBackPrice currency={this.state.currency} priceUSD={priceUSD} symbolUSD={symbolUSD} priceGBP={priceGBP} symbolGBP={symbolGBP} priceRUB={priceRUB} symbolRUB={symbolRUB} priceAUD={priceAUD} symbolAUD={symbolAUD} priceJPY={priceJPY} symbolJPY={symbolJPY}/>
+                                <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={attributes}/>
+                                    <Attributes attributes={this.state.attributes}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -317,7 +323,7 @@ class SingleItem extends Component{
                                 <br/>
                                 <br/>
                                 <div className="description">
-                                    {description}
+                                    {this.state.description}
                                 </div>
                             </div>
                         </div>
@@ -326,34 +332,34 @@ class SingleItem extends Component{
                 )
             }
         }else{
-            if(product.inStock == true){
+            if(this.state.product.inStock == true){
                 return(
                     <div >
                         
                         <h1 >Detailed view</h1>
                         <div className="grid-container">
-                            <img className="itemPicturel itemPicture1" src={pictures[1]}></img>
+                            <img className="itemPicturel itemPicture1" src={this.state.pictures[1]}></img>
                             
                             
-                            <img className="itemPicturel itemPicture2" src={pictures[3]}></img>
+                            <img className="itemPicturel itemPicture2" src={this.state.pictures[3]}></img>
                             
-                            <img className="itemPicture4" src={pictures[0]}></img>
-                            <img  className="itemPicturel itemPicture3" src={pictures[2]}></img>
+                            <img className="itemPicture4" src={this.state.pictures[0]}></img>
+                            <img  className="itemPicturel itemPicture3" src={this.state.pictures[2]}></img>
                             <div className="innerdetails-grid">
-                                <h2 className="brandName">{product.brand}</h2>
-                                <p className="itemNamel">{product.name}</p>
+                                <h2 className="brandName">{this.state.product.brand}</h2>
+                                <p className="itemNamel">{this.state.product.name}</p>
                                 
-                                <GiveBackPrice currency={this.state.currency} priceUSD={priceUSD} symbolUSD={symbolUSD} priceGBP={priceGBP} symbolGBP={symbolGBP} priceRUB={priceRUB} symbolRUB={symbolRUB} priceAUD={priceAUD} symbolAUD={symbolAUD} priceJPY={priceJPY} symbolJPY={symbolJPY}/>
+                                <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={attributes}/>
+                                    <Attributes attributes={this.state.attributes}/>
                                 </div>
                                 <br/>
                                 <br/>
-                                <div>ADD TO CART</div>
+                                <button onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">
-                                    {description}
+                                    {this.state.description}
                                 </div>
                             </div>
                         </div>
@@ -388,7 +394,7 @@ class SingleItem extends Component{
                                 <br/>
                                 <br/>
                                 <div className="description">
-                                    {description}
+                                    {this.state.description}
                                 </div>
                             </div>
                         </div>

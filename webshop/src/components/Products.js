@@ -12,9 +12,7 @@ class Products extends Component {
   componentDidMount() {
     this.props.fetchProducts();
   }
-  componentDidUpdate(){
-    console.log("v2rskendan");
-  }
+
   render() {
     if(this.props.currency == "GBP"){
       return(
@@ -36,7 +34,7 @@ class Products extends Component {
               pic4={item.gallery[4]}
               pic5={item.gallery[5]}
               pic6={item.gallery[6]}
-              
+              button={(e) => this.props.addToCart(this.props.cartItems, item)}
               
               
                               
@@ -64,7 +62,7 @@ class Products extends Component {
                 pic4={item.gallery[4]}
                 pic5={item.gallery[5]}
                 pic6={item.gallery[6]}
-                
+                button={(e) => this.props.addToCart(this.props.cartItems, item)}
                 
                 
                                 
@@ -92,7 +90,7 @@ class Products extends Component {
                     pic4={item.gallery[4]}
                     pic5={item.gallery[5]}
                     pic6={item.gallery[6]}
-                    
+                    button={(e) => this.props.addToCart(this.props.cartItems, item)}
                     
                     
                                     
@@ -120,7 +118,7 @@ class Products extends Component {
                     pic4={item.gallery[4]}
                     pic5={item.gallery[5]}
                     pic6={item.gallery[6]}
-                    
+                    button={(e) => this.props.addToCart(this.props.cartItems, item)}
                     
                     
                                     

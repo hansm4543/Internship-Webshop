@@ -34,7 +34,7 @@ class ProductsClothes extends Component {
               pic4={item.gallery[4]}
               pic5={item.gallery[5]}
               pic6={item.gallery[6]}
-              
+              button={(e) => this.props.addToCart(this.props.cartItems, item)}
               
               
                               
@@ -62,7 +62,7 @@ class ProductsClothes extends Component {
                 pic4={item.gallery[4]}
                 pic5={item.gallery[5]}
                 pic6={item.gallery[6]}
-                
+                button={(e) => this.props.addToCart(this.props.cartItems, item)}
                 
                 
                                 
@@ -90,7 +90,7 @@ class ProductsClothes extends Component {
                     pic4={item.gallery[4]}
                     pic5={item.gallery[5]}
                     pic6={item.gallery[6]}
-                    
+                    button={(e) => this.props.addToCart(this.props.cartItems, item)}
                     
                     
                                     
@@ -118,7 +118,7 @@ class ProductsClothes extends Component {
                     pic4={item.gallery[4]}
                     pic5={item.gallery[5]}
                     pic6={item.gallery[6]}
-                    
+                    button={(e) => this.props.addToCart(this.props.cartItems, item)}
                     
                     
                                     
@@ -126,7 +126,7 @@ class ProductsClothes extends Component {
                 ))}
             </div>
         )
-    }
+    }else{
     return(
         <div className="outer-grid">
             {this.props.products.map((item) => (
@@ -164,7 +164,8 @@ class ProductsClothes extends Component {
             ))}
         </div>
 
-    );
+    )
+    };
   }
 }
 const mapStateToProps = (state) => ({

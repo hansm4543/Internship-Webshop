@@ -19,7 +19,27 @@ export const addToCart = (items, product) => (dispatch) => {
 };
 
 export const removeFromCart = (items, product) => (dispatch) => {
-  const cartItems = items.slice().filter((a) => a.id !== product.id);
-  localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  dispatch({ type: REMOVE_FROM_CART, payload: { cartItems } });
+
+  let cartItems = items.slice();
+  
+  //.filter((a) => a.id !== product.id);
+  cartItems.forEach((cp) => {
+    if (cp.id === product.id) {
+      if(cp.count === 1){
+        cartItems = cartItems.filter((a) => a.id !== product.id);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        console.log(cartItems)
+        dispatch({ type: REMOVE_FROM_CART, payload: { cartItems } });
+      }else{
+        cp.count -= 1;
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        console.log(cartItems)
+        dispatch({ type: REMOVE_FROM_CART, payload: { cartItems } });
+      }
+      
+    }
+  });
+
+  //localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  //dispatch({ type: REMOVE_FROM_CART, payload: { cartItems } });
 };

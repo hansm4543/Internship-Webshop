@@ -2,11 +2,40 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import util from "../util";
 import { addToCart, removeFromCart } from "../actions/cartActions";
+import { Link } from 'react-router-dom';
+import { currencyChange } from "../actions/currencyActions";
+import Item from "./Item";
+import Attributes from './Attributes';
+import GiveBackPrice from "./GiveBackPrice";
+let currencyvariable
+let currencysymbolvariables
 class Basket extends Component {
   render() {
     const { cartItems } = this.props;
+    if(cartItems === undefined){
+      return <div className="alert alert-info">
+              "Basket is empty"
+              </div>
+    }
+    if(this.props.currency==="USD"){
+      currencyvariable = 0
+      currencysymbolvariables = "$"
+    }else if(this.props.currency==="GBP"){
+      currencyvariable = 1
+      currencysymbolvariables = "£"
+    }else if(this.props.currency==="AUD"){
+      currencyvariable = 2
+      currencysymbolvariables = "A$"
+    }else if(this.props.currency==="JPY"){
+      currencyvariable = 3
+      currencysymbolvariables = "¥"
+    }else if(this.props.currency==="RUB"){
+      currencyvariable = 4
+      currencysymbolvariables = "₽"
+    }
 
     return (
+      
       <div className="alert alert-info">
         {cartItems.length === 0 ? (
           "Basket is empty"
@@ -17,30 +46,31 @@ class Basket extends Component {
         )}
         {cartItems.length > 0 && (
           <div>
-            <ul style={{ marginLeft: -25 }}>
               {cartItems.map((item) => (
-                <li key={item.id}>
-                  <b>{item.name}</b>
-                  <button
-                    style={{ float: "right" }}
-                    className="btn btn-danger btn-xs"
-                    onClick={(e) =>
-                      this.props.removeFromCart(this.props.cartItems, item)
-                    }
-                  >
-                    X
-                  </button>
+                 
+        
+                <div id={item.id}>
+                  <img style={{padding: 10}} className="itemPicture" src={item.gallery[0]}></img>
+                  <div className="itemName">{this.props.brand}{this.props.name}</div>
+                  <GiveBackPrice currency={this.props.currency}  priceUSD={item.prices[0].amount} symbolUSD={item.prices[0].currency.symbol} priceGBP={item.prices[1].amount} symbolGBP={item.prices[1].currency.symbol} priceRUB={item.prices[4].amount} symbolRUB={item.prices[4].currency.symbol} priceAUD={item.prices[2].amount} symbolAUD={item.prices[2].currency.symbol} priceJPY={item.prices[3].amount} symbolJPY={item.prices[3].currency.symbol}/>
+                  <div className="allOptions">
+                    <Attributes attributes={item.attributes}/>
+                  </div>
+                  <button style={{ float: "right" }}onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>X</button>
+                  <button style={{ float: "right" }} onClick={(e) => this.props.addToCart(this.props.cartItems, item)}>Add to Cart </button>
+                  
                   <br />
-                  {item.count} X {(item.price)}
-                </li>
+                  <p>Item count: {item.count}</p>
+
+                </div>
               ))}
-            </ul>
+
 
             <b>
               Sum:{" "}
               {(
-                cartItems.reduce((a, c) => a + c.price * c.count, 0)
-              )}
+                cartItems.reduce((a, c) => a + c.prices[currencyvariable].amount * c.count, 0)
+              )}{" "}{currencysymbolvariables}{" "}
             </b>
             <button
               onClick={() => alert("Todo: Implement checkout page.")}
@@ -55,6 +85,8 @@ class Basket extends Component {
   }
 }
 const mapStateToProps = (state) => ({
+  products: state.products.items,
   cartItems: state.cart.items,
+  currency: state.currency.value,
 });
-export default connect(mapStateToProps, { addToCart, removeFromCart })(Basket);
+export default connect(mapStateToProps, { addToCart, removeFromCart, currencyChange })(Basket);

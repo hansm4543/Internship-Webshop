@@ -5,6 +5,26 @@ import { Link } from 'react-router-dom';
 import { currencyChange } from "../actions/currencyActions";
 
 class Navbar extends Component{
+    constructor(){
+        super();
+        this.state={
+            link: "",
+        }
+    }
+    componentDidMount(){
+        let URL = window.location.href.split("/");
+        console.group(URL[3])
+        this.setState({ link: URL[3] });
+    }
+    componentDidUpdate(){
+        let URL = window.location.href.split("/");
+        if(this.state.link != URL[3]){
+            console.group(URL[3])
+            this.setState({ link: URL[3] });
+        }
+       
+        
+    }
 
     render(){
         const onPriceChange= (value) => {
@@ -19,8 +39,8 @@ class Navbar extends Component{
         console.group(URL[3])
 
 
-        if(this.props.currency == "GBP"){
-            if(URL[3] == ""){
+        if(this.props.currency==="GBP"){
+            if(URL[3]===""){
                 return (
                     <div className="navbar">
                         <div className='allSelected'>
@@ -57,7 +77,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "tech"){
+            }else if(URL[3]==="tech"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -94,7 +114,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "clothes"){
+            }else if(URL[3]==="clothes"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -162,8 +182,8 @@ class Navbar extends Component{
                 </div>
             );
             }
-        }else if(this.props.currency == "AUD"){
-            if(URL[3] == ""){
+        }else if(this.props.currency==="AUD"){
+            if(URL[3]===""){
                 return (
                     <div className="navbar">
                         <div className='allSelected'>
@@ -200,7 +220,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "tech"){
+            }else if(URL[3]==="tech"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -237,7 +257,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "clothes"){
+            }else if(URL[3]==="clothes"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -274,39 +294,39 @@ class Navbar extends Component{
                     </div>
                 );
             }else{
-            return (
-                <div className="navbar">
-                    <Link to ="/" className='all'>
-                        All
-                    </Link>
-                    <Link to ="/tech" className='tech'>
-                        Tech
-                    </Link>
-                    <Link to ="/clothes" className='clothes'>
-                        Clothes
-                    </Link>
-                    <Link to ="/">
-                        <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
-                    </Link>
-                    <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
-                            <option value="USD" >$ USD</option>
-                            <option value="GBP">£ GBP</option>
-                            <option value="AUD" selected>A$ AUD</option>
-                            <option value="JPY">¥ JPY</option>
-                            <option value="RUB">₽ RUB</option>
-                            </select>
-                        </div>
-        
-                    <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                    </Link>
-                <hr></hr>
-                </div>
-            );
+                return (
+                    <div className="navbar">
+                        <Link to ="/" className='all'>
+                            All
+                        </Link>
+                        <Link to ="/tech" className='tech'>
+                            Tech
+                        </Link>
+                        <Link to ="/clothes" className='clothes'>
+                            Clothes
+                        </Link>
+                        <Link to ="/">
+                            <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
+                        </Link>
+                        <div className='currencies'>
+                                <select onChange={onPriceChange} id="currencies">
+                                <option value="USD" >$ USD</option>
+                                <option value="GBP">£ GBP</option>
+                                <option value="AUD" selected>A$ AUD</option>
+                                <option value="JPY">¥ JPY</option>
+                                <option value="RUB">₽ RUB</option>
+                                </select>
+                            </div>
+            
+                        <Link to="/cart">
+                            <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
+                        </Link>
+                    <hr></hr>
+                    </div>
+                );
             }
-        }else if(this.props.currency == "JPY"){
-            if(URL[3] == ""){
+        }else if(this.props.currency==="JPY"){
+            if(URL[3]===""){
                 return (
                     <div className="navbar">
                         <div className='allSelected'>
@@ -343,7 +363,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "tech"){
+            }else if(URL[3]==="tech"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -380,7 +400,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "clothes"){
+            }else if(URL[3]==="clothes"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -448,8 +468,8 @@ class Navbar extends Component{
                 </div>
             );
             }
-        }else if(this.props.currency == "RUB"){
-            if(URL[3] == ""){
+        }else if(this.props.currency==="RUB"){
+            if(URL[3]===""){
                 return (
                     <div className="navbar">
                         <div className='allSelected'>
@@ -486,7 +506,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "tech"){
+            }else if(URL[3]==="tech"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -523,7 +543,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "clothes"){
+            }else if(URL[3]==="clothes"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -592,7 +612,7 @@ class Navbar extends Component{
             );
             }
         }else{
-            if(URL[3] == ""){
+            if(URL[3]===""){
                 return (
                     <div className="navbar">
                         <div className='allSelected'>
@@ -629,7 +649,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "tech"){
+            }else if(URL[3]==="tech"){
                 return (
                     <div className="navbar">
                         <div className='all'>
@@ -666,7 +686,7 @@ class Navbar extends Component{
                         <hr></hr>
                     </div>
                 );
-            }else if(URL[3] == "clothes"){
+            }else if(URL[3]==="clothes"){
                 return (
                     <div className="navbar">
                         <div className='all'>
