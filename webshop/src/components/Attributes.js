@@ -3,72 +3,72 @@ import SingleAttribute from "./SingleAttribute";
 
 import React, { Component } from "react";
 
-function Attributes(props){
+class Attributes extends Component{
+    
+    render(){
 
-    //console.log(props)
-    if(props.attributes != null){
+    //console.log(this.props)
+    if(this.props.attributes != null){
         
-        if(props.attributes.length == 1){
+        if(this.props.attributes.length == 1){
             return (
                 
-                <SingleAttribute attributes={props.attributes[0]}/>
+                <SingleAttribute attributes={this.props.attributes[0]}/>
                 
         
             )
-        }else if(props.attributes.length == 2){
+        }else if(this.props.attributes.length == 2){
             return (
                 <div>
-                    <SingleAttribute attributes={props.attributes[0]}/>
-                    <SingleAttribute attributes={props.attributes[1]}/>
+                    <SingleAttribute attributes={this.props.attributes[0]}/>
+                    <SingleAttribute attributes={this.props.attributes[1]}/>
                 </div>
         
             )
-        }else if(props.attributes.length == 3){
+        }else if(this.props.attributes.length == 3){
             return (
                 <div>
-                    <SingleAttribute attributes={props.attributes[0]}/>
-                    <SingleAttribute attributes={props.attributes[1]}/>
-                    <SingleAttribute attributes={props.attributes[2]}/>
+                    <SingleAttribute attributes={this.props.attributes[0]}/>
+                    <SingleAttribute attributes={this.props.attributes[1]}/>
+                    <SingleAttribute attributes={this.props.attributes[2]}/>
                 </div>
         
             )
-        }else if(props.attributes.length == 4){
+        }else if(this.props.attributes.length == 4){
             return (
                 <div>
-                    <SingleAttribute attributes={props.attributes[0]}/>
-                    <SingleAttribute attributes={props.attributes[1]}/>
-                    <SingleAttribute attributes={props.attributes[2]}/>
-                    <SingleAttribute attributes={props.attributes[4]}/>
+                    <SingleAttribute attributes={this.props.attributes[0]}/>
+                    <SingleAttribute attributes={this.props.attributes[1]}/>
+                    <SingleAttribute attributes={this.props.attributes[2]}/>
+                    <SingleAttribute attributes={this.props.attributes[4]}/>
                 </div>
         
             )
-        }else if(props.attributes.length == 5){
+        }else if(this.props.attributes.length == 5){
             return (
                 <div>
-                    <SingleAttribute attributes={props.attributes[0]}/>
-                    <SingleAttribute attributes={props.attributes[1]}/>
-                    <SingleAttribute attributes={props.attributes[2]}/>
-                    <SingleAttribute attributes={props.attributes[3]}/>
-                    <SingleAttribute attributes={props.attributes[4]}/>
+                    <SingleAttribute attributes={this.props.attributes[0]}/>
+                    <SingleAttribute attributes={this.props.attributes[1]}/>
+                    <SingleAttribute attributes={this.props.attributes[2]}/>
+                    <SingleAttribute attributes={this.props.attributes[3]}/>
+                    <SingleAttribute attributes={this.props.attributes[4]}/>
                 </div>
         
             )
         }
     }
-    
 
 
-    return (
-        <div>
+        return (
+            <div>
+            
 
-           
+            </div>
 
-        </div>
-
-    )
-
+        )
 
 
+    }
     
 }
 

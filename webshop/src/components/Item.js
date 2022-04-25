@@ -5,7 +5,7 @@ import React, { Component } from "react";
 
 
 class Item extends Component{
- 
+    
     render(){
     console.log(this.props)
     let cleanText = this.props.description.replace(/<\/?[^>]+(>|$)/g, "");

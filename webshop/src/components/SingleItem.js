@@ -107,14 +107,9 @@ class SingleItem extends Component{
     }
     
     render(){
-        function itemSubmitHandler(number, data){
-            if(number === 1){
-                console.log("Õnnestus");
-                //dispatch(currencyChange(data));
-            }else{
-                console.log("Failed");
-            }
-    
+        function itemSubmitHandler(){
+            console.log(document.querySelector('input[name=Color]:checked').value);
+            
         }
         //console.log(this.state.this.state.product.inStock)
         if(this.state.pictures.length === 1){
@@ -141,7 +136,8 @@ class SingleItem extends Component{
                                 </div>
                                 <br/>
                                 <br/>
-                                <button onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
+                                <button onClick={(e) => {console.log(document.querySelector('input[name=Color]:checked').value);
+                                    this.props.addToCart(this.props.cartItems, this.state.product)}}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">

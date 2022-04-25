@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import util from "../util";
 import { addToCart } from "../actions/cartActions";
 import { fetchProductsClothes } from "../actions/productActions";
 import Item from "./Item";

@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import util from "../util";
 import { addToCart, removeFromCart } from "../actions/cartActions";
-import { Link } from 'react-router-dom';
 import { currencyChange } from "../actions/currencyActions";
-import Item from "./Item";
+
 import Attributes from './Attributes';
 import GiveBackPrice from "./GiveBackPrice";
-let currencyvariable
-let currencysymbolvariables
+let currencyvariable;
+let currencysymbolvariables;
 class Basket extends Component {
   render() {
     const { cartItems } = this.props;
