@@ -7,28 +7,28 @@ class GiveBackPrice extends Component{
         //console.log("i am here")
 
         //console.log(this.props.currency)
-        if(this.props.currency == "AUD"){
+        if(this.props.currency === "AUD"){
             return(
 
                 <div>
                     <p className="price">{this.props.symbolAUD} {this.props.priceAUD}</p>
                 </div>
             )
-        }else if(this.props.currency == "RUB"){
+        }else if(this.props.currency === "RUB"){
             return(
 
                 <div>
                     <p className="price">{this.props.symbolRUB} {this.props.priceRUB}</p>
                 </div>
             )
-        }else if(this.props.currency == "JPY"){
+        }else if(this.props.currency === "JPY"){
             return(
 
                 <div>
                     <p className="price">{this.props.symbolJPY} {this.props.priceJPY}</p>
                 </div>
             )
-        }else if(this.props.currency == "GBP"){
+        }else if(this.props.currency === "GBP"){
             return(
 
                 <div>

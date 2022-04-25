@@ -107,13 +107,14 @@ class SingleItem extends Component{
     }
     
     render(){
+        /*
         function itemSubmitHandler(){
             console.log(document.querySelector('input[name=Color]:checked').value);
             
-        }
+        }*/
         //console.log(this.state.this.state.product.inStock)
         if(this.state.pictures.length === 1){
-            if(this.state.product.inStock == true){
+            if(this.state.product.inStock === true){
                 return(
                     <div >
                         
@@ -185,8 +186,8 @@ class SingleItem extends Component{
                 )
             }
 
-        }else if(pictures.length == 2){
-            if(this.state.product.inStock == true){
+        }else if(pictures.length === 2){
+            if(this.state.product.inStock === true){
                 return(
                     <div >
                         
@@ -256,8 +257,8 @@ class SingleItem extends Component{
     
                 )
             }
-        }else if(pictures.length == 3){
-            if(this.state.product.inStock == true){
+        }else if(pictures.length === 3){
+            if(this.state.product.inStock === true){
                 return(
                     <div >
                         
@@ -328,7 +329,7 @@ class SingleItem extends Component{
                 )
             }
         }else{
-            if(this.state.product.inStock == true){
+            if(this.state.product.inStock === true){
                 return(
                     <div >
                         

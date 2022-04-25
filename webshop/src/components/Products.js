@@ -13,7 +13,7 @@ class Products extends Component {
   }
 
   render() {
-    if(this.props.currency == "GBP"){
+    if(this.props.currency === "GBP"){
       return(
           <div className="outer-grid">
           {this.props.products.map((item) => (
@@ -41,7 +41,7 @@ class Products extends Component {
           ))}
       </div>
       )
-    }else if(this.props.currency == "AUD"){
+    }else if(this.props.currency === "AUD"){
         return(
             <div className="outer-grid">
             {this.props.products.map((item) => (
@@ -69,7 +69,7 @@ class Products extends Component {
             ))}
         </div>
         )
-    }else if(this.props.currency == "JPY"){
+    }else if(this.props.currency === "JPY"){
         return(
             <div className="outer-grid">
                 {this.props.products.map((item) => (
@@ -97,7 +97,7 @@ class Products extends Component {
                 ))}
             </div>
         )
-    }else if(this.props.currency == "RUB"){
+    }else if(this.props.currency === "RUB"){
         return(
             <div className="outer-grid">
                 {this.props.products.map((item) => (

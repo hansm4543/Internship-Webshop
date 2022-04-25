@@ -8,16 +8,16 @@ class Attributes extends Component{
     render(){
 
     //console.log(this.props)
-    if(this.props.attributes != null){
+    if(this.props.attributes !== null){
         
-        if(this.props.attributes.length == 1){
+        if(this.props.attributes.length === 1){
             return (
                 
                 <SingleAttribute attributes={this.props.attributes[0]}/>
                 
         
             )
-        }else if(this.props.attributes.length == 2){
+        }else if(this.props.attributes.length === 2){
             return (
                 <div>
                     <SingleAttribute attributes={this.props.attributes[0]}/>
@@ -25,7 +25,7 @@ class Attributes extends Component{
                 </div>
         
             )
-        }else if(this.props.attributes.length == 3){
+        }else if(this.props.attributes.length === 3){
             return (
                 <div>
                     <SingleAttribute attributes={this.props.attributes[0]}/>
@@ -34,7 +34,7 @@ class Attributes extends Component{
                 </div>
         
             )
-        }else if(this.props.attributes.length == 4){
+        }else if(this.props.attributes.length === 4){
             return (
                 <div>
                     <SingleAttribute attributes={this.props.attributes[0]}/>
@@ -44,7 +44,7 @@ class Attributes extends Component{
                 </div>
         
             )
-        }else if(this.props.attributes.length == 5){
+        }else if(this.props.attributes.length === 5){
             return (
                 <div>
                     <SingleAttribute attributes={this.props.attributes[0]}/>

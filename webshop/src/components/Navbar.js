@@ -18,7 +18,7 @@ class Navbar extends Component{
     }
     componentDidUpdate(){
         let URL = window.location.href.split("/");
-        if(this.state.link != URL[3]){
+        if(this.state.link !== URL[3]){
             console.group(URL[3])
             this.setState({ link: URL[3] });
         }

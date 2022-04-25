@@ -8,8 +8,8 @@ class Item extends Component{
     
     render(){
     console.log(this.props)
-    let cleanText = this.props.description.replace(/<\/?[^>]+(>|$)/g, "");
-    if(this.props.instock == true){
+    //let cleanText = this.props.description.replace(/<\/?[^>]+(>|$)/g, "");
+    if(this.props.instock === true){
         return (
             
             <div id="Item" className="inner-grid">
