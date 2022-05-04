@@ -65,7 +65,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP" selected>£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -100,7 +100,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP" selected>£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -134,7 +134,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP" selected>£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -162,7 +162,7 @@ class Navbar extends Component{
                         <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                     </Link>
                     <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD">$ USD</option>
                             <option value="GBP" selected>£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -200,7 +200,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD" selected>A$ AUD</option>
@@ -235,7 +235,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD" selected>A$ AUD</option>
@@ -269,7 +269,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD" selected>A$ AUD</option>
@@ -297,7 +297,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                                <select onChange={onPriceChange} id="currencies">
+                                <select onChange={onPriceChange} id="currencies" className="selectCur">
                                 <option value="USD" >$ USD</option>
                                 <option value="GBP">£ GBP</option>
                                 <option value="AUD" selected>A$ AUD</option>
@@ -335,7 +335,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -370,7 +370,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -404,7 +404,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -432,7 +432,7 @@ class Navbar extends Component{
                         <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                     </Link>
                     <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -470,7 +470,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -505,7 +505,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -539,7 +539,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -567,7 +567,7 @@ class Navbar extends Component{
                         <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                     </Link>
                     <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD" >$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -605,7 +605,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD" selected>$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -640,7 +640,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" selected>$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -674,7 +674,7 @@ class Navbar extends Component{
                             <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                         </Link>
                         <div className='currencies'>
-                            <select onChange={onPriceChange}  id="currencies">
+                            <select onChange={onPriceChange}  id="currencies" className="selectCur">
                             <option value="USD" selected>$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
@@ -702,7 +702,7 @@ class Navbar extends Component{
                         <img className="logo" src="/shop.png" alt="Veebilehe logo"></img>
                     </Link>
                     <div className='currencies'>
-                            <select onChange={onPriceChange} id="currencies">
+                            <select onChange={onPriceChange} id="currencies" className="selectCur">
                             <option value="USD" selected>$ USD</option>
                             <option value="GBP">£ GBP</option>
                             <option value="AUD">A$ AUD</option>
