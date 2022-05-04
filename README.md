@@ -29,6 +29,10 @@ Make a store webpage that has cart and currency changing ability
 ![Source code](pictures/DetailedView.PNG)
 * Currency Change
 ![Source code](pictures/CurrencyChange.PNG)
+* MiniCart
+![Source code](pictures/MiniCart.png)
+* Cart
+![Source code](pictures/Cart.PNG)
 
 </br>
 
