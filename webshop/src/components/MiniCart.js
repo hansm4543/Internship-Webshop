@@ -70,7 +70,7 @@ class Basket extends Component {
                 onClick={() => alert("Todo: Implement checkout page.")}
                 className="btn btn-primary"
                 >
-                checkout
+                Checkout
                 </button>
           </div>
             

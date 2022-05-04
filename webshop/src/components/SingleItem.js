@@ -136,7 +136,7 @@ class SingleItem extends Component{
                                 </div>
                                 <br/>
                                 <br/>
-                                <button onClick={(e) => {console.log(document.querySelector('input[name=Color]:checked').value);
+                                <button  onClick={(e) => {console.log(document.querySelector('input[name=Color]:checked').value);
                                     this.props.addToCart(this.props.cartItems, this.state.product)}}>Add to Cart </button>
                                 <br/>
                                 <br/>
@@ -351,7 +351,7 @@ class SingleItem extends Component{
                                 </div>
                                 <br/>
                                 <br/>
-                                <button onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
+                                <button className="addCartBtn" onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">

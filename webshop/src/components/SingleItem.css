@@ -100,3 +100,9 @@
    background: lightgreen;
    padding: 8px;
  }
+
+ button{
+   padding: 10px;
+  border: 2px solid gray;
+  border-radius: 25px;
+ }

@@ -59,6 +59,7 @@ class Basket extends Component {
                   <button style={{ float: "left" }} onClick={(e) => this.props.addToCart(this.props.cartItems, item)}>Add Item </button>
                   
                   <br />
+                  <br />
                   <p>Item count: {item.count}</p>
 
                 </div>
@@ -75,7 +76,7 @@ class Basket extends Component {
               onClick={() => alert("Todo: Implement checkout page.")}
               className="btn btn-primary"
             >
-              checkout
+              Checkout
             </button>
           </div>
         )}
