@@ -8,15 +8,23 @@ Main Idea:
 Make a store webpage that has cart and currency changing ability
 
 ## Application functional details:
-* You can filter through diffrent categories
+* You can navigate through diffrent categories
 * You can open item's detailed view
 * You can change currency on website
+* You can add items to cart
+* You increase item amount in cart
+* You decrease item amount in cart
+
+</br>
+
+## What can be done next:
+* Flexible design
 
 </br>
 
 ## How to boot the application:
 * For backend, with CMD you have to move to backend folder and type yarn start.
-* For frontend, with CMD you have to move to my-app folder and type npm start.
+* For frontend, with CMD you have to move to webshop folder and type npm start.
 
 </br>
 
