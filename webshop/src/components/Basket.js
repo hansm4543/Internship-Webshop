@@ -54,8 +54,9 @@ class Basket extends Component {
                   <div className="allOptions">
                     <Attributes attributes={item.attributes}/>
                   </div>
-                  <button style={{ float: "right" }}onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>X</button>
-                  <button style={{ float: "right" }} onClick={(e) => this.props.addToCart(this.props.cartItems, item)}>Add to Cart </button>
+                  <br></br>
+                  <button style={{ float: "left" }}onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>Remove Item</button>
+                  <button style={{ float: "left" }} onClick={(e) => this.props.addToCart(this.props.cartItems, item)}>Add Item </button>
                   
                   <br />
                   <p>Item count: {item.count}</p>

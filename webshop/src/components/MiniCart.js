@@ -50,8 +50,8 @@ class Basket extends Component {
                         <Attributes attributes={item.attributes}/>
                     </div>
                     <br></br>
-                    <button onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>X</button>
-                    <button  onClick={(e) => this.props.addToCart(this.props.cartItems, item)}>Add to Cart </button>
+                    <button onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>Remove Item</button>
+                    <button  onClick={(e) => this.props.addToCart(this.props.cartItems, item)}>Add Item </button>
                     
                     <br />
                     <p>Item count: {item.count}</p>

@@ -73,9 +73,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -110,9 +108,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -146,9 +142,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -177,9 +171,7 @@ class Navbar extends Component{
                             </select>
                         </div>
         
-                    <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                    </Link>
+                        <CartBtn/>
                 <hr></hr>
                 </div>
             );
@@ -216,9 +208,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -253,9 +243,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -289,9 +277,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -320,9 +306,7 @@ class Navbar extends Component{
                                 </select>
                             </div>
             
-                        <Link to="/cart">
-                            <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                            <CartBtn/>
                     <hr></hr>
                     </div>
                 );
@@ -359,9 +343,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -396,9 +378,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -432,9 +412,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -463,9 +441,7 @@ class Navbar extends Component{
                             </select>
                         </div>
         
-                    <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                    </Link>
+                        <CartBtn/>
                 <hr></hr>
                 </div>
             );
@@ -502,9 +478,7 @@ class Navbar extends Component{
                             <option value="RUB" selected>₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -539,9 +513,7 @@ class Navbar extends Component{
                             <option value="RUB" selected>₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -575,9 +547,7 @@ class Navbar extends Component{
                             <option value="RUB" selected>₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -606,9 +576,7 @@ class Navbar extends Component{
                             </select>
                         </div>
         
-                    <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                    </Link>
+                        <CartBtn/>
                 <hr></hr>
                 </div>
             );
@@ -680,9 +648,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -716,9 +682,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );
@@ -747,9 +711,7 @@ class Navbar extends Component{
                             </select>
                         </div>
         
-                    <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                    </Link>
+                        <CartBtn/>
                 <hr></hr>
                 </div>
             );
