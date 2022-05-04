@@ -8,7 +8,7 @@ class Attributes extends Component{
     render(){
 
     //console.log(this.props)
-    if(this.props.attributes !== null){
+    if(this.props.attributes !== undefined){
         
         if(this.props.attributes.length === 1){
             return (

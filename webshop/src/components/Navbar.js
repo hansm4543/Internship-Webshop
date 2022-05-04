@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
 import { currencyChange } from "../actions/currencyActions";
+import CartBtn from "./CartBtn";
+import MiniCart from "./CartBtn";
 
 class Navbar extends Component{
     constructor(){
@@ -643,9 +645,7 @@ class Navbar extends Component{
                             <option value="RUB">₽ RUB</option>
                             </select>
                         </div>
-                        <Link to="/cart">
-                        <img className="cart" src="/cart.png" alt="Ostukorvi logo"></img>
-                        </Link>
+                        <CartBtn/>
                         <hr></hr>
                     </div>
                 );

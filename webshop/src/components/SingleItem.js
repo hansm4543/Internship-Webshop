@@ -107,12 +107,11 @@ class SingleItem extends Component{
     }
     
     render(){
-        /*
-        function itemSubmitHandler(){
-            console.log(document.querySelector('input[name=Color]:checked').value);
-            
-        }*/
-        //console.log(this.state.this.state.product.inStock)
+        
+        console.log("toimin")
+        console.log(this.state)
+        /*return (<div>jou</div>) */
+        
         if(this.state.pictures.length === 1){
             if(this.state.product.inStock === true){
                 return(
@@ -400,8 +399,9 @@ class SingleItem extends Component{
                 )
             }
         }
-
+       
     }
+    
     
     
 }
@@ -410,6 +410,6 @@ const mapStateToProps = (state) => ({
     products: state.products.items,
     cartItems: state.cart.items,
     currency: state.currency.value,
-  });
-  export default connect(mapStateToProps, { addToCart, })(SingleItem);
+});
+export default connect(mapStateToProps, { addToCart, })(SingleItem);
   

@@ -148,10 +148,17 @@ a:-webkit-any-link {
 }
 .cart{
   margin-top: 1rem;
-  margin-left: 0px
+  margin-left: 200px
 }
 .addToCartBTN{
   padding: 10px;
   border: 2px solid gray;
   border-radius: 25px;
+}
+
+.addToCartBTN:hover{
+  cursor: pointer;
+}
+button:hover{
+  cursor: pointer;
 }
