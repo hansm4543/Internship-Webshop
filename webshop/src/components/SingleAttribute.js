@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import './attributes.css';
-import SelectedAttributes from './SelectedAttributes';
 
 class SingleAttribute extends Component{
     render(){

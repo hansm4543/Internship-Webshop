@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
 import { currencyChange } from "../actions/currencyActions";
 import CartBtn from "./CartBtn";
-import MiniCart from "./CartBtn";
 
 class Navbar extends Component{
     constructor(){
