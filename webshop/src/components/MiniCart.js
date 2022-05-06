@@ -55,8 +55,9 @@ class Basket extends Component {
                     
                     <br />
                     <p>Item count: {item.count}</p>
-
+                    <hr></hr>
                     </div>
+                    
                 ))}
 
 

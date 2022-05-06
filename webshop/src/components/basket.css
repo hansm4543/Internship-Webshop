@@ -1,0 +1,21 @@
+.basketFlex-Container{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.basketFlex-Container > div {
+    border: 1px solid lightgreen;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    
+}
+.CheckOutBtn{
+    margin-left: 20px;
+}

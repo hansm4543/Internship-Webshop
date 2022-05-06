@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 import { currencyChange } from "../actions/currencyActions";
+import './basket.css';
 
 import Attributes from './Attributes';
 import GiveBackPrice from "./GiveBackPrice";
@@ -43,41 +44,44 @@ class Basket extends Component {
           </div>
         )}
         {cartItems.length > 0 && (
-          <div>
-              {cartItems.map((item) => (
-                 
-        
-                <div id={item.id}>
-                  <img style={{padding: 10}} className="itemPicture" src={item.gallery[0]}></img>
-                  <div className="itemName">{this.props.brand}{this.props.name}</div>
-                  <GiveBackPrice currency={this.props.currency}  priceUSD={item.prices[0].amount} symbolUSD={item.prices[0].currency.symbol} priceGBP={item.prices[1].amount} symbolGBP={item.prices[1].currency.symbol} priceRUB={item.prices[4].amount} symbolRUB={item.prices[4].currency.symbol} priceAUD={item.prices[2].amount} symbolAUD={item.prices[2].currency.symbol} priceJPY={item.prices[3].amount} symbolJPY={item.prices[3].currency.symbol}/>
-                  <div className="allOptions">
-                    <Attributes attributes={item.attributes}/>
-                  </div>
-                  <br></br>
-                  <button style={{ float: "left" }}onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>Remove Item</button>
-                  <button style={{ float: "left" }} onClick={(e) => this.props.addToCart(this.props.cartItems, item)}>Add Item </button>
-                  
-                  <br />
-                  <br />
-                  <p>Item count: {item.count}</p>
-
-                </div>
-              ))}
-
-
+          <div >
             <b>
-              Sum:{" "}
+              Cart sum:{" "}
               {(
                 cartItems.reduce((a, c) => a + c.prices[currencyvariable].amount * c.count, 0)
               )}{" "}{currencysymbolvariables}{" "}
             </b>
             <button
               onClick={() => alert("Todo: Implement checkout page.")}
-              className="btn btn-primary"
+              className="btn btn-primary CheckOutBtn"
             >
-              Checkout
+              Go to Checkout
             </button>
+            <div className="basketFlex-Container">
+              {cartItems.map((item) => (
+        
+                  <div id={item.id}>
+                    <img style={{padding: 10}} className="itemPicture" src={item.gallery[0]}></img>
+                    <div className="itemName">{this.props.brand}{this.props.name}</div>
+                    <GiveBackPrice currency={this.props.currency}  priceUSD={item.prices[0].amount} symbolUSD={item.prices[0].currency.symbol} priceGBP={item.prices[1].amount} symbolGBP={item.prices[1].currency.symbol} priceRUB={item.prices[4].amount} symbolRUB={item.prices[4].currency.symbol} priceAUD={item.prices[2].amount} symbolAUD={item.prices[2].currency.symbol} priceJPY={item.prices[3].amount} symbolJPY={item.prices[3].currency.symbol}/>
+                    <div className="allOptions">
+                      <Attributes attributes={item.attributes}/>
+                    </div>
+                    <br></br>
+                    <button style={{ float: "left" }}onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>Remove Item</button>
+                    <button style={{ float: "left" }} onClick={(e) => this.props.addToCart(this.props.cartItems, item)}>Add Item </button>
+                    
+                    <br />
+                    <br />
+                    <p>Item count: {item.count}</p>
+
+                  </div>
+
+              ))}
+              </div>
+
+              
+            
           </div>
         )}
       </div>
