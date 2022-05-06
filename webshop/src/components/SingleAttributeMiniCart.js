@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import './attributes.css';
 
-class SingleAttribute extends Component{
+class SingleAttributeMiniCart extends Component{
     render(){
         //console.log(this.props.attributes.type)
         let length = this.props.attributes.items.length; 
@@ -15,7 +15,7 @@ class SingleAttribute extends Component{
 
                         <div className="Attributes">
                         <p>Please select {this.props.attributes.name}:</p>
-                        <input defaultChecked  type="radio" id={this.props.attributes.items[0].value} name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}/>
+                        <input defaultChecked  type="radio" id={this.props.attributes.items[0].value} name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}/>
                         <label for={this.props.attributes.items[0].value}>{this.props.attributes.items[0].displayValue}</label>
                         </div>
                         
@@ -41,12 +41,12 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
 
@@ -59,12 +59,12 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
 
@@ -81,12 +81,12 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input className="textInput" defaultChecked id={this.props.attributes.name} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input className="textInput" defaultChecked id={this.props.attributes.name} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input className="textInput"  id={this.props.attributes.name} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input className="textInput"  id={this.props.attributes.name} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
 
@@ -113,17 +113,17 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
 
@@ -136,17 +136,17 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
 
@@ -159,17 +159,17 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
 
@@ -186,17 +186,17 @@ class SingleAttribute extends Component{
                             <p>Please select {this.props.attributes.name}:</p>
 
                                 <label>
-                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                     {this.props.attributes.items[0].displayValue}
                                 </label>
                                 <br></br>
                                 <label>
-                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                      {this.props.attributes.items[1].displayValue}
                                 </label>
                                 <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
 
@@ -223,22 +223,22 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
 
@@ -251,22 +251,22 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
 
@@ -279,22 +279,22 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name}value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"}value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
 
@@ -307,22 +307,22 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
 
@@ -339,22 +339,22 @@ class SingleAttribute extends Component{
                             <p>Please select {this.props.attributes.name}:</p>
 
                                 <label>
-                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                     {this.props.attributes.items[0].displayValue}
                                 </label>
                                 <br></br>
                                 <label>
-                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                      {this.props.attributes.items[1].displayValue}
                                 </label>
                                 <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
 
@@ -380,27 +380,27 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
 
@@ -413,27 +413,27 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
 
@@ -446,27 +446,27 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
 
@@ -479,27 +479,27 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
 
@@ -512,27 +512,27 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
 
@@ -549,27 +549,27 @@ class SingleAttribute extends Component{
                             <p>Please select {this.props.attributes.name}:</p>
 
                                 <label>
-                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                     {this.props.attributes.items[0].displayValue}
                                 </label>
                                 <br></br>
                                 <label>
-                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                      {this.props.attributes.items[1].displayValue}
                                 </label>
                                 <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
 
@@ -595,32 +595,32 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
 
@@ -633,32 +633,32 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
 
@@ -671,32 +671,32 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
 
@@ -709,32 +709,32 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
 
@@ -747,32 +747,32 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
 
@@ -785,32 +785,32 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
 
@@ -827,32 +827,32 @@ class SingleAttribute extends Component{
                             <p>Please select {this.props.attributes.name}:</p>
 
                                 <label>
-                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                     {this.props.attributes.items[0].displayValue}
                                 </label>
                                 <br></br>
                                 <label>
-                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                      {this.props.attributes.items[1].displayValue}
                                 </label>
                                 <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
 
@@ -878,37 +878,37 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         {this.props.attributes.items[6].displayValue}
                                     </label>
 
@@ -921,37 +921,37 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         {this.props.attributes.items[6].displayValue}
                                     </label>
 
@@ -964,37 +964,37 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         {this.props.attributes.items[6].displayValue}
                                     </label>
 
@@ -1007,37 +1007,37 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         {this.props.attributes.items[6].displayValue}
                                     </label>
 
@@ -1050,37 +1050,37 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input   id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         {this.props.attributes.items[6].displayValue}
                                     </label>
 
@@ -1093,37 +1093,37 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         {this.props.attributes.items[6].displayValue}
                                     </label>
 
@@ -1136,37 +1136,37 @@ class SingleAttribute extends Component{
                                 <p>Please select {this.props.attributes.name}:</p>
 
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         {this.props.attributes.items[0].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         {this.props.attributes.items[1].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         {this.props.attributes.items[6].displayValue}
                                     </label>
 
@@ -1183,37 +1183,37 @@ class SingleAttribute extends Component{
                             <p>Please select {this.props.attributes.name}:</p>
 
                                 <label>
-                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                     {this.props.attributes.items[0].displayValue}
                                 </label>
                                 <br></br>
                                 <label>
-                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                    <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                      {this.props.attributes.items[1].displayValue}
                                 </label>
                                 <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         {this.props.attributes.items[2].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         {this.props.attributes.items[3].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         {this.props.attributes.items[4].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                        <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         {this.props.attributes.items[5].displayValue}
                                     </label>
                                     <br></br>
                                     <label>
-                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                        <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         {this.props.attributes.items[6].displayValue}
                                     </label>
 
@@ -1232,7 +1232,7 @@ class SingleAttribute extends Component{
                             <ul>
                                 <li>
                                 <label>
-                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                    <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                     <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                 </label>
                                 </li>
@@ -1261,13 +1261,13 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
@@ -1282,13 +1282,13 @@ class SingleAttribute extends Component{
                                     <ul>
                                         <li>
                                         <label>
-                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                         </label>
                                         </li>
@@ -1306,13 +1306,13 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
@@ -1340,19 +1340,19 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
@@ -1367,19 +1367,19 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
@@ -1394,19 +1394,19 @@ class SingleAttribute extends Component{
                                     <ul>
                                         <li>
                                         <label>
-                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                         </label>
                                         </li>
@@ -1424,19 +1424,19 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
@@ -1465,25 +1465,25 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
@@ -1498,25 +1498,25 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
@@ -1531,25 +1531,25 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
@@ -1564,25 +1564,25 @@ class SingleAttribute extends Component{
                                     <ul>
                                         <li>
                                         <label>
-                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                         </label>
                                         </li>
@@ -1600,25 +1600,25 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
@@ -1646,31 +1646,31 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
@@ -1685,31 +1685,31 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
@@ -1724,31 +1724,31 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
@@ -1763,31 +1763,31 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
@@ -1802,31 +1802,31 @@ class SingleAttribute extends Component{
                                     <ul>
                                         <li>
                                         <label>
-                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                         </label>
                                         </li>
@@ -1844,31 +1844,31 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
@@ -1896,37 +1896,37 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
@@ -1941,37 +1941,37 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
@@ -1986,37 +1986,37 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
@@ -2031,37 +2031,37 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
@@ -2076,37 +2076,37 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
@@ -2121,37 +2121,37 @@ class SingleAttribute extends Component{
                                     <ul>
                                         <li>
                                         <label>
-                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
@@ -2169,37 +2169,37 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
@@ -2227,43 +2227,43 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[6].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[6].displayValue}
                                     </label>
                                     </li>
@@ -2278,43 +2278,43 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[6].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[6].displayValue}
                                     </label>
                                     </li>
@@ -2329,43 +2329,43 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[6].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[6].displayValue}
                                     </label>
                                     </li>
@@ -2380,43 +2380,43 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[6].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[6].displayValue}
                                     </label>
                                     </li>
@@ -2431,43 +2431,43 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input defaultChecked  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[6].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[6].displayValue}
                                     </label>
                                     </li>
@@ -2482,43 +2482,43 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input defaultChecked  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input   id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[6].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[6].displayValue}
                                     </label>
                                     </li>
@@ -2533,43 +2533,43 @@ class SingleAttribute extends Component{
                                     <ul>
                                         <li>
                                         <label>
-                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                            <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                            <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                        <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                        <input   id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                         <label>
-                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                        <input   id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                             <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                         </label>
                                         </li>
                                         <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[6].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[6].displayValue}
                                     </label>
                                     </li>
@@ -2587,43 +2587,43 @@ class SingleAttribute extends Component{
                                 <ul>
                                     <li>
                                     <label>
-                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[0].displayValue}></input>
+                                        <input defaultChecked id={this.props.attributes.items[0].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[0].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[0].displayValue}}></span> {this.props.attributes.items[0].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[1].displayValue}></input>
+                                        <input  id={this.props.attributes.items[1].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[1].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[1].displayValue}}></span> {this.props.attributes.items[1].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[2].displayValue}></input>
+                                    <input  id={this.props.attributes.items[2].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[2].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[2].displayValue}}></span> {this.props.attributes.items[2].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[3].displayValue}></input>
+                                    <input  id={this.props.attributes.items[3].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[3].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[3].displayValue}}></span> {this.props.attributes.items[3].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[4].displayValue}></input>
+                                    <input  id={this.props.attributes.items[4].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[4].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[4].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[4].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[5].displayValue}></input>
+                                    <input   id={this.props.attributes.items[5].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[5].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[5].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[5].displayValue}
                                     </label>
                                     </li>
                                     <li>
                                     <label>
-                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name} value={this.props.attributes.items[6].displayValue}></input>
+                                    <input   id={this.props.attributes.items[6].value} type="radio" name={this.props.itemid+this.props.attributes.name+"2"} value={this.props.attributes.items[6].displayValue}></input>
                                         <span class="swatch" style={{backgroundColor: this.props.attributes.items[6].displayValue, borderRadius: "2px solid black"}}></span> {this.props.attributes.items[6].displayValue}
                                     </label>
                                     </li>
@@ -2654,4 +2654,4 @@ class SingleAttribute extends Component{
     
 }
 
-export default SingleAttribute;
+export default SingleAttributeMiniCart;

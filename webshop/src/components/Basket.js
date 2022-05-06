@@ -65,7 +65,7 @@ class Basket extends Component {
                     <div className="itemName">{this.props.brand}{this.props.name}</div>
                     <GiveBackPrice currency={this.props.currency}  priceUSD={item.prices[0].amount} symbolUSD={item.prices[0].currency.symbol} priceGBP={item.prices[1].amount} symbolGBP={item.prices[1].currency.symbol} priceRUB={item.prices[4].amount} symbolRUB={item.prices[4].currency.symbol} priceAUD={item.prices[2].amount} symbolAUD={item.prices[2].currency.symbol} priceJPY={item.prices[3].amount} symbolJPY={item.prices[3].currency.symbol}/>
                     <div className="allOptions">
-                      <Attributes attributes={item.attributes} selectedAttributes={item.selectedAttributes}/>
+                      <Attributes attributes={item.attributes} selectedAttributes={item.selectedAttributes} itemid={item.id}/>
                     </div>
                     <br></br>
                     <button style={{ float: "left" }}onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>Remove Item</button>

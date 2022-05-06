@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 import { currencyChange } from "../actions/currencyActions";
 
-import Attributes from './Attributes';
+import Attributes2 from './Attributes2';
 import GiveBackPrice from "./GiveBackPrice";
 let currencyvariable;
 let currencysymbolvariables;
@@ -46,8 +46,8 @@ class Basket extends Component {
                     <img style={{padding: 10}} className="itemPictureCart" src={item.gallery[0]}></img>
                     <div className="itemNameCart">{item.brand}{item.name}</div>
                     <GiveBackPrice currency={this.props.currency}  priceUSD={item.prices[0].amount} symbolUSD={item.prices[0].currency.symbol} priceGBP={item.prices[1].amount} symbolGBP={item.prices[1].currency.symbol} priceRUB={item.prices[4].amount} symbolRUB={item.prices[4].currency.symbol} priceAUD={item.prices[2].amount} symbolAUD={item.prices[2].currency.symbol} priceJPY={item.prices[3].amount} symbolJPY={item.prices[3].currency.symbol}/>
-                    <div className="allOptionsCart">
-                        <Attributes attributes={item.attributes} selectedAttributes={item.selectedAttributes}/>
+                    <div >
+                        <Attributes2 attributes={item.attributes} selectedAttributes={item.selectedAttributes} itemid={item.id}/>
                     </div>
                     <br></br>
                     <button onClick={(e) =>this.props.removeFromCart(this.props.cartItems, item)}>Remove Item</button>

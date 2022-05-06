@@ -112,7 +112,7 @@ class SingleItem extends Component{
         //console.log(this.state)
         /*return (<div>jou</div>) */
         const onAttributeSelect = () => {
-             
+            const itemID = window.location.href.split("/item/")[1];
 
             
             let productwithID = this.state.product
@@ -120,29 +120,36 @@ class SingleItem extends Component{
             let attributes = []
             let integer
             let json
+            let name=itemID
+            
             for(integer = 0; integer < howmanyAttributes; integer++){
                 if(this.state.product.attributes[integer].name === "With USB 3 ports" || this.state.product.attributes[integer].name === "Touch ID in keyboard"){
                     if(this.state.product.attributes[integer].name === "With USB 3 ports"){
                         //console.log(this.state.product.attributes[integer].name)
                         //console.log(document.querySelector('input[name='+this.state.product.attributes[integer].name+']:checked').value)
-                        
+                        let name2 = this.state.product.attributes[integer].name
+                        let nimeke = name + name2
                         json = {
-                            "name": this.state.product.attributes[integer].name,
-                            "value": document.querySelectorAll('[name="With USB 3 ports"]:checked')[0].value
+                            "name": nimeke,
+                            "value": document.querySelectorAll('[name="apple-imac-2021With USB 3 ports"]:checked')[0].value
         
                         }
                     }else if(this.state.product.attributes[integer].name === "Touch ID in keyboard"){
+                        let name2 = this.state.product.attributes[integer].name
+                        let nimeke = name + name2
                         json = {
-                            "name": this.state.product.attributes[integer].name,
-                            "value": document.querySelectorAll('[name="Touch ID in keyboard"]:checked')[0].value
+                            "name": nimeke,
+                            "value": document.querySelectorAll('[name="apple-imac-2021Touch ID in keyboard"]:checked')[0].value
         
                         }
                     }
                 }else{
                     //for some reason this doesnt work with the macbook
+                    let name2 = this.state.product.attributes[integer].name
+                        let nimeke = name + name2
                     json = {
-                        "name": this.state.product.attributes[integer].name,
-                        "value": document.querySelector('input[name='+ this.state.product.attributes[integer].name +']:checked').value
+                        "name": nimeke,
+                        "value": document.querySelector('input[name='+ nimeke +']:checked').value
 
                     }
                 }
@@ -159,7 +166,7 @@ class SingleItem extends Component{
             this.props.addToCart(this.props.cartItems, productwithID)
           
         };
-        
+        const itemID = window.location.href.split("/item/")[1];
         if(this.state.pictures.length === 1){
             if(this.state.product.inStock === true){
                 return(
@@ -180,7 +187,7 @@ class SingleItem extends Component{
                                 
                                 <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={this.state.attributes}/>
+                                    <Attributes attributes={this.state.attributes} itemid={itemID}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -219,7 +226,7 @@ class SingleItem extends Component{
                                 
                                 <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={this.state.attributes}/>
+                                    <Attributes attributes={this.state.attributes} itemid={itemID}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -256,7 +263,7 @@ class SingleItem extends Component{
                                 
                                 <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={this.state.attributes}/>
+                                    <Attributes attributes={this.state.attributes} itemid={itemID}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -295,7 +302,7 @@ class SingleItem extends Component{
                                 
                                 <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={this.state.attributes}/>
+                                    <Attributes attributes={this.state.attributes} itemid={itemID}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -331,7 +338,7 @@ class SingleItem extends Component{
                                 
                                 <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={this.state.attributes}/>
+                                    <Attributes attributes={this.state.attributes} itemid={itemID}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -370,7 +377,7 @@ class SingleItem extends Component{
                                 
                                 <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={this.state.attributes}/>
+                                    <Attributes attributes={this.state.attributes} itemid={itemID}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -406,7 +413,7 @@ class SingleItem extends Component{
                                 
                                 <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={this.state.attributes}/>
+                                    <Attributes attributes={this.state.attributes} itemid={itemID}/>
                                 </div>
                                 <br/>
                                 <br/>
@@ -445,7 +452,7 @@ class SingleItem extends Component{
                                 
                                 <GiveBackPrice currency={this.props.currency}  priceUSD={this.state.priceUSD} symbolUSD={this.state.symbolUSD} priceGBP={this.state.priceGBP} symbolGBP={this.state.symbolGBP} priceRUB={this.state.priceRUB} symbolRUB={this.state.symbolRUB} priceAUD={this.state.priceAUD} symbolAUD={this.state.symbolAUD} priceJPY={this.state.priceJPY} symbolJPY={this.state.symbolJPY}/>
                                 <div className="allOptions">
-                                    <Attributes attributes={this.state.attributes}/>
+                                    <Attributes attributes={this.state.attributes} itemid={itemID}/>
                                 </div>
                                 <br/>
                                 <br/>
