@@ -108,9 +108,57 @@ class SingleItem extends Component{
     
     render(){
         
-        console.log("toimin")
-        console.log(this.state)
+        //console.log("toimin")
+        //console.log(this.state)
         /*return (<div>jou</div>) */
+        const onAttributeSelect = () => {
+             
+
+            
+            let productwithID = this.state.product
+            let howmanyAttributes = this.state.product.attributes.length
+            let attributes = []
+            let integer
+            let json
+            for(integer = 0; integer < howmanyAttributes; integer++){
+                if(this.state.product.attributes[integer].name === "With USB 3 ports" || this.state.product.attributes[integer].name === "Touch ID in keyboard"){
+                    if(this.state.product.attributes[integer].name === "With USB 3 ports"){
+                        //console.log(this.state.product.attributes[integer].name)
+                        //console.log(document.querySelector('input[name='+this.state.product.attributes[integer].name+']:checked').value)
+                        
+                        json = {
+                            "name": this.state.product.attributes[integer].name,
+                            "value": document.querySelectorAll('[name="With USB 3 ports"]:checked')[0].value
+        
+                        }
+                    }else if(this.state.product.attributes[integer].name === "Touch ID in keyboard"){
+                        json = {
+                            "name": this.state.product.attributes[integer].name,
+                            "value": document.querySelectorAll('[name="Touch ID in keyboard"]:checked')[0].value
+        
+                        }
+                    }
+                }else{
+                    //for some reason this doesnt work with the macbook
+                    json = {
+                        "name": this.state.product.attributes[integer].name,
+                        "value": document.querySelector('input[name='+ this.state.product.attributes[integer].name +']:checked').value
+
+                    }
+                }
+                
+                //console.log(document.querySelectorAll('[name="With USB 3 ports"]:checked')[0].value)
+                
+                attributes[integer] = json
+            }
+            productwithID.selectedAttributes = attributes
+            console.log("mollan");
+            console.log(productwithID);
+
+
+            this.props.addToCart(this.props.cartItems, productwithID)
+          
+        };
         
         if(this.state.pictures.length === 1){
             if(this.state.product.inStock === true){
@@ -136,8 +184,11 @@ class SingleItem extends Component{
                                 </div>
                                 <br/>
                                 <br/>
-                                <button  onClick={(e) => {console.log(document.querySelector('input[name=Color]:checked').value);
-                                    this.props.addToCart(this.props.cartItems, this.state.product)}}>Add to Cart </button>
+                                <button  onClick={(e) => {
+                                    //console.log(document.querySelector('input[name=Color]:checked').value);
+                                    onAttributeSelect();
+                                    //this.props.addToCart(this.props.cartItems, this.state.product)
+                                }}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">
@@ -209,7 +260,11 @@ class SingleItem extends Component{
                                 </div>
                                 <br/>
                                 <br/>
-                                <button onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
+                                <button  onClick={(e) => {
+                                    //console.log(document.querySelector('input[name=Color]:checked').value);
+                                    onAttributeSelect();
+                                    //this.props.addToCart(this.props.cartItems, this.state.product)
+                                }}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">
@@ -280,7 +335,11 @@ class SingleItem extends Component{
                                 </div>
                                 <br/>
                                 <br/>
-                                <button onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
+                                <button  onClick={(e) => {
+                                    //console.log(document.querySelector('input[name=Color]:checked').value);
+                                    onAttributeSelect();
+                                    //this.props.addToCart(this.props.cartItems, this.state.product)
+                                }}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">
@@ -351,7 +410,11 @@ class SingleItem extends Component{
                                 </div>
                                 <br/>
                                 <br/>
-                                <button className="addCartBtn" onClick={(e) => this.props.addToCart(this.props.cartItems, this.state.product)}>Add to Cart </button>
+                                <button  onClick={(e) => {
+                                    //console.log(document.querySelector('input[name=Color]:checked').value);
+                                    onAttributeSelect();
+                                    //this.props.addToCart(this.props.cartItems, this.state.product)
+                                }}>Add to Cart </button>
                                 <br/>
                                 <br/>
                                 <div className="description">
