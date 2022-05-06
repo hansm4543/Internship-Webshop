@@ -18,6 +18,7 @@ Make a store webpage that has cart and currency changing ability
 </br>
 
 ## What can be done next:
+* On item page, when item is added to cart then remove attribute selection together with add to cart button and say to client that it is already in cart
 * Flexible design
 
 </br>
