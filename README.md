@@ -23,7 +23,7 @@ Make a store webpage that has cart and currency changing ability
 </br>
 
 ## How to boot the application:
-* For backend, with CMD you have to move to backend folder and type yarn start.
+* For backend, with CMD you have to move to backend folder, then type yarn build and after that type yarn start.
 * For frontend, with CMD you have to move to webshop folder and type npm start.
 
 </br>
