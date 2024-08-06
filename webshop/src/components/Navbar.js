@@ -32,7 +32,7 @@ class Navbar extends Component{
             //console.log(value)
             var el = document.getElementById('currencies');
             const data = el.value.split(" ");
-            console.log(data[0]);
+            //console.log(data[0]);
             this.props.currencyChange(data[0]);
             //props.onCurrencyChange(1, data);
         };
