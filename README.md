@@ -1,7 +1,5 @@
 # Project Name: WebShop
 
-#
-
 ### Author: Hans-Märten Liiu
 
 </br>
