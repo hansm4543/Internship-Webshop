@@ -6,7 +6,8 @@
 
 ## Updated on August 2024:
 
-Refactored some of the code in order to challange myself by diving into legacy project. Main focus was on makeing the worst parts of the code work faster and look cleaner.
+Refactored some of the code in order to challange myself by diving into legacy project.
+Main focus was on making the worst parts of the code work faster and look cleaner.
 
 </br>
 
